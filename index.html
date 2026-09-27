@@ -1,965 +1,1595 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Ballab Masala</title>
-    <meta name="description" content="Buy 100% pure, unadulterated, stone-ground spices online. Experience the authentic heat of Ballab Masala's exclusive Assam Special, Fotki Tikha, and Bullet Chilly powders.">
-    <meta property="og:title" content="Home | Ballab Masala"><meta property="og:description" content="Buy 100% pure, unadulterated, stone-ground spices online. Experience the authentic heat of Ballab Masala's exclusive Assam Special, Fotki Tikha, and Bullet Chilly powders."><meta property="og:image" content=""><meta name="twitter:card" content="summary_large_image"><link rel="manifest" href="manifest.json"><meta name="theme-color" content="#000000"><link rel="apple-touch-icon" href=""><script type="application/ld+json">{"@context": "https://schema.org", "@type": "LocalBusiness", "name": "Ballab Masala", "image": "https://cdn.shopaccino.com/refresh/articles/shutterstock1503700925-670186_l.jpg?v=681", "telephone": "919734239509", "email": "manikbiswas9122@gmail.com", "url": "https://www.ballabmasala.com", "description": "Buy 100% pure, unadulterated, stone-ground spices online. Experience the authentic heat of Ballab Masala's exclusive Assam Special, Fotki Tikha, and Bullet Chilly powders."}</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>বল্লভ মশলা | ১০০% খাঁটি ও ঐতিহ্যবাহী পাথরের জাঁতায় পেষা মশলা</title>
+<meta name="description" content="বর্ধমান নিমদহের বিশ্বস্ত ১০০% খাঁটি, ভেজালহীন মশলা। আসাম স্পেশাল, ফটকি তিখা ও তীব্র ঝাল বুলেট লঙ্কা গুঁড়ো, কারকিউমিনযুক্ত হলুদ এবং সুগন্ধি জিরে-ধনে কিনুন।">
+<meta property="og:title" content="বল্লভ মশলা | ১০০% খাঁটি ও ঐতিহ্যবাহী মশলা">
+<meta property="og:description" content="হাতে বাছাই করা বীজ, রোদে শুকিয়ে পাথরের জাঁতায় কম তাপে ভাঙা খাঁটি মশলা। কোনো ভেজাল বা কৃত্রিম রঙ নেই।">
+<meta property="og:image" content="https://cdn.shopaccino.com/refresh/articles/shutterstock1503700925-670186_l.jpg?v=681">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#991b1b">
+
+<!-- গুগল বাংলা ফন্টস -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Noto+Serif+Bengali:wght@500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "বল্লভ মশলা (Ballab Masala)",
+  "image": "https://cdn.shopaccino.com/refresh/articles/shutterstock1503700925-670186_l.jpg?v=681",
+  "telephone": "+919734239509",
+  "email": "manikbiswas9122@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "নিমদহ কালী বাড়ি, নিমদহ",
+    "addressLocality": "বর্ধমান",
+    "postalCode": "713512",
+    "addressRegion": "পশ্চিমবঙ্গ",
+    "addressCountry": "IN"
+  },
+  "url": "https://www.ballabmasala.com",
+  "description": "পাথরের জাঁতায় পেষা খাঁটি ভারতীয় মশলা। কোনো কৃত্রিম রঙ বা কেমিক্যাল ছাড়া সরাসরি বর্ধমান থেকে।"
+}
+</script>
+
+<style>
+:root {
+    --primary: #991b1b; /* গাঢ় জাফরান লাল */
+    --primary-hover: #7f1d1d;
+    --gold: #df9b26; /* খাঁটি কাঁচা হলুদের সোনালী */
+    --gold-light: #fef3c7;
+    --dark: #141210;
+    --bg: #fdfbf7; /* উষ্ণ প্রাকৃতিক মার্বেল রঙ */
+    --card-bg: #ffffff;
+    --text-heading: #1c1917;
+    --text-body: #44403c;
+    --border-color: rgba(223, 155, 38, 0.2);
+    --shadow-soft: 0 10px 30px -5px rgba(20, 18, 16, 0.06);
+    --shadow-elevated: 0 20px 40px -10px rgba(153, 27, 27, 0.15);
+    --radius: 16px;
+    --font-display: 'Noto Serif Bengali', 'Playfair Display', serif;
+    --font-serif: 'Noto Serif Bengali', serif;
+    --font-sans: 'Hind Siliguri', 'Plus Jakarta Sans', sans-serif;
+}
+
+.dark-mode {
+    --bg: #0f0d0c;
+    --card-bg: #1a1715;
+    --text-heading: #fef08a;
+    --text-body: #d6d3d1;
+    --border-color: rgba(223, 155, 38, 0.25);
+    --shadow-soft: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; }
+
+body { 
+    background: var(--bg); 
+    color: var(--text-body); 
+    font-family: var(--font-sans); 
+    line-height: 1.8; 
+    overflow-x: hidden; 
+    transition: background 0.4s ease, color 0.4s ease;
+}
+
+h1, h2, h3, h4 { 
+    font-family: var(--font-display); 
+    color: var(--text-heading); 
+    line-height: 1.35; 
+    letter-spacing: -0.01em;
+}
+
+.serif-accent {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-weight: 400;
+}
+
+.container { max-width: 1280px; margin: 0 auto; padding: 0 1.5rem; }
+
+/* টপ অ্যানাউন্সমেন্ট বার */
+#top-bar {
+    background: linear-gradient(90deg, #991b1b, #b45309, #991b1b);
+    background-size: 200% 200%;
+    animation: gradientShift 10s ease infinite;
+    color: #ffffff;
+    text-align: center;
+    padding: 8px 16px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    position: relative;
+    z-index: 2001;
+}
+#top-bar a { color: #fef08a; text-decoration: underline; font-weight: 700; margin-left: 8px; }
+@keyframes gradientShift { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }
+
+/* গ্লাস ন্যাভবার */
+nav#main-navbar { 
+    position: sticky; top: 0; width: 100%; z-index: 2000;
+    background: rgba(253, 251, 247, 0.94);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-bottom: 1px solid var(--border-color);
+    transition: all 0.3s;
+}
+.dark-mode nav#main-navbar {
+    background: rgba(15, 13, 12, 0.94);
+}
+.nav-flex { display: flex; justify-content: space-between; align-items: center; height: 75px; }
+
+.brand-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+.brand-icon {
+    width: 40px; height: 40px;
+    background: linear-gradient(135deg, var(--gold), var(--primary));
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    color: #fff; font-weight: 900; font-size: 1.3rem;
+    font-family: var(--font-display);
+    box-shadow: 0 4px 12px rgba(223, 155, 38, 0.4);
+}
+.brand-name {
+    font-family: var(--font-display);
+    font-size: 1.55rem;
+    font-weight: 800;
+    color: var(--primary);
+}
+.dark-mode .brand-name { color: var(--gold); }
+
+.nav-links { display: flex; align-items: center; gap: 1.8rem; }
+.nav-links a { 
+    text-decoration: none; 
+    font-weight: 600; 
+    color: var(--text-body); 
+    font-size: 1.05rem; 
+    transition: 0.25s; 
+    position: relative; 
+}
+.nav-links a:hover { color: var(--primary); }
+.nav-links a::after {
+    content: ''; position: absolute; width: 0; height: 2px;
+    bottom: -4px; left: 0; background: var(--primary); transition: 0.3s;
+}
+.nav-links a:hover::after { width: 100%; }
+
+.mobile-menu { display: none; font-size: 1.8rem; cursor: pointer; background: none; border: none; color: var(--text-heading); }
+
+/* বোতাম */
+.btn { 
+    display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+    padding: 0.8rem 1.6rem; border-radius: 50px; 
+    font-weight: 700; text-decoration: none; transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    cursor: pointer; border: none; font-size: 0.95rem; font-family: var(--font-sans);
+}
+.btn-primary { 
+    background: linear-gradient(135deg, var(--primary), #b91c1c); 
+    color: #ffffff !important; 
+    box-shadow: 0 8px 20px rgba(153, 27, 27, 0.28); 
+}
+.btn-primary:hover { 
+    transform: translateY(-2px); 
+    box-shadow: 0 12px 28px rgba(153, 27, 27, 0.38); 
+    filter: brightness(1.08);
+}
+.btn-gold {
+    background: linear-gradient(135deg, var(--gold), #ca8a04);
+    color: #ffffff !important;
+    box-shadow: 0 8px 20px rgba(223, 155, 38, 0.3);
+}
+.btn-gold:hover { transform: translateY(-2px); filter: brightness(1.1); }
+.btn-outline {
+    border: 2px solid var(--primary);
+    background: transparent;
+    color: var(--primary) !important;
+}
+.btn-outline:hover {
+    background: var(--primary);
+    color: #ffffff !important;
+}
+
+/* হিরো সেকশন */
+.hero {
+    position: relative;
+    padding: 4rem 0 5.5rem 0;
+    overflow: hidden;
+}
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 3.5rem;
+    align-items: center;
+}
+.badge-pill {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: var(--gold-light);
+    color: #92400e;
+    padding: 6px 15px;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+    border: 1px solid rgba(223, 155, 38, 0.3);
+}
+.dark-mode .badge-pill { background: rgba(223, 155, 38, 0.15); color: #fef08a; }
+
+.hero h1 {
+    font-size: clamp(2.3rem, 4.2vw, 3.6rem);
+    margin-bottom: 1.2rem;
+    line-height: 1.3;
+}
+.hero h1 span {
+    color: var(--primary);
+}
+.hero p {
+    font-size: 1.15rem;
+    color: var(--text-body);
+    margin-bottom: 2rem;
+    max-width: 600px;
+}
+.hero-cta-group { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 2.2rem; }
+
+.hero-features-strip {
+    display: flex;
+    gap: 1.8rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border-color);
+    flex-wrap: wrap;
+}
+.strip-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-body);
+}
+.strip-icon { color: var(--gold); }
+
+.hero-media-wrapper {
+    position: relative;
+}
+.hero-image-frame {
+    width: 100%;
+    height: 500px;
+    border-radius: 28px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 25px 60px -15px rgba(20, 18, 16, 0.2);
+    border: 6px solid var(--card-bg);
+}
+.hero-image-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.floating-seal {
+    position: absolute;
+    bottom: -20px;
+    left: -20px;
+    background: var(--card-bg);
+    border-radius: 20px;
+    padding: 1.2rem 1.6rem;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+    border: 1px solid var(--border-color);
+}
+.floating-seal strong { font-size: 2rem; color: var(--primary); font-family: var(--font-display); line-height: 1; }
+.floating-seal span { font-size: 0.9rem; font-weight: 700; color: var(--text-body); }
+
+/* ৩-স্তর লঙ্কার তীব্রতা স্পেকট্রাম */
+.heat-spectrum-section {
+    background: linear-gradient(180deg, rgba(223, 155, 38, 0.08) 0%, transparent 100%);
+    padding: 4rem 0;
+    margin-top: 1rem;
+}
+.spectrum-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+.heat-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    padding: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.heat-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-elevated);
+}
+.heat-card::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 5px;
+}
+.heat-card.assam::before { background: #ea580c; }
+.heat-card.fotki::before { background: #dc2626; }
+.heat-card.bullet::before { background: #7f1d1d; }
+
+.flame-indicator { font-size: 1.6rem; margin-bottom: 0.6rem; }
+.heat-level-title { font-size: 1.35rem; font-weight: 700; margin-bottom: 0.3rem; color: var(--text-heading); }
+.heat-scoville { font-size: 0.9rem; font-weight: 700; color: var(--gold); margin-bottom: 0.8rem; }
+.heat-desc { font-size: 0.95rem; color: var(--text-body); line-height: 1.65; }
+
+/* বৈশিষ্ট্যসমূহ */
+.features-section { padding: 6rem 0; }
+.section-title { text-align: center; max-width: 760px; margin: 0 auto 3.5rem auto; }
+.section-title h2 { font-size: clamp(2rem, 3.2vw, 2.8rem); margin-bottom: 0.6rem; }
+.section-title p { font-size: 1.1rem; opacity: 0.9; }
+
+.grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; }
+.pillar-card {
+    background: var(--card-bg);
+    border-radius: var(--radius);
+    padding: 2.2rem;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-soft);
+    transition: all 0.3s ease;
+}
+.pillar-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--gold);
+    box-shadow: var(--shadow-elevated);
+}
+.pillar-icon-box {
+    width: 58px; height: 58px;
+    background: rgba(223, 155, 38, 0.12);
+    color: var(--primary);
+    border-radius: 14px;
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 1.2rem;
+    font-size: 1.5rem;
+}
+.pillar-card h3 { font-size: 1.35rem; margin-bottom: 0.6rem; }
+.pillar-card p { font-size: 0.98rem; color: var(--text-body); line-height: 1.65; }
+
+/* স্টোর সেকশন */
+.store-section {
+    background: rgba(223, 155, 38, 0.04);
+    padding: 5.5rem 0;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+}
+.store-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+}
+.filter-pills { display: flex; gap: 0.6rem; flex-wrap: wrap; }
+.filter-pill {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    padding: 0.5rem 1.3rem;
+    border-radius: 50px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s;
+    color: var(--text-body);
+    font-family: var(--font-sans);
+}
+.filter-pill.active, .filter-pill:hover {
+    background: var(--primary);
+    color: #fff;
+    border-color: var(--primary);
+}
+.search-input-box {
+    position: relative;
+    min-width: 270px;
+}
+.search-input-box input {
+    width: 100%;
+    padding: 0.65rem 1.4rem;
+    border-radius: 50px;
+    border: 1px solid var(--border-color);
+    background: var(--card-bg);
+    color: var(--text-heading);
+    font-family: inherit;
+    font-size: 0.95rem;
+    outline: none;
+}
+
+/* প্রোডাক্ট কার্ড */
+.product-card {
+    background: var(--card-bg);
+    border-radius: var(--radius);
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-soft);
+    display: flex;
+    flex-direction: column;
+    transition: all 0.35s ease;
+}
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 45px -10px rgba(0,0,0,0.12);
+    border-color: var(--gold);
+}
+.product-img-box {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+    background: #f5f0ea;
+}
+.product-img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+.product-card:hover .product-img-box img {
+    transform: scale(1.06);
+}
+.purity-tag {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: rgba(20, 18, 16, 0.85);
+    color: #fef08a;
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 50px;
+}
+.product-body {
+    padding: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.product-title {
+    font-size: 1.35rem;
+    margin-bottom: 0.4rem;
+    color: var(--text-heading);
+}
+.product-price {
+    font-size: 1.45rem;
+    font-weight: 800;
+    color: var(--primary);
+    margin-bottom: 0.8rem;
+}
+.product-desc {
+    font-size: 0.95rem;
+    color: var(--text-body);
+    line-height: 1.65;
+    margin-bottom: 1.5rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.product-actions {
+    margin-top: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+}
+
+/* আমাদের কথা টিজার */
+.about-section { padding: 6rem 0; }
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+.about-image-stack { position: relative; }
+.about-main-img {
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+    border-radius: 24px;
+    box-shadow: var(--shadow-soft);
+}
+
+/* সচরাচর জিজ্ঞাস্য (FAQ) */
+.faq-section { padding: 5rem 0; max-width: 860px; margin: 0 auto; }
+details {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    padding: 1.2rem 1.6rem;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+details[open] {
+    border-color: var(--gold);
+    box-shadow: var(--shadow-soft);
+}
+details summary {
+    font-family: var(--font-display);
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--text-heading);
+    outline: none;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+details summary::-webkit-details-marker { display: none; }
+details summary::after { content: '+'; font-size: 1.5rem; color: var(--gold); font-weight: 400; transition: transform 0.2s; }
+details[open] summary::after { content: '−'; }
+details p {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: var(--text-body);
+    line-height: 1.7;
+}
+
+/* স্লাইড-আউট কার্ট ড্রয়ার */
+#cart-drawer-overlay {
+    position: fixed; inset: 0;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(4px);
+    z-index: 4000;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+#cart-drawer-overlay.active { opacity: 1; visibility: visible; }
+
+#cart-drawer {
+    position: fixed; top: 0; right: -460px;
+    width: 100%; max-width: 440px; height: 100vh;
+    background: var(--card-bg);
+    z-index: 4001;
+    box-shadow: -10px 0 40px rgba(0,0,0,0.25);
+    display: flex; flex-direction: column;
+    transition: right 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    padding: 2rem;
+}
+#cart-drawer.active { right: 0; }
+.cart-header {
+    display: flex; justify-content: space-between; align-items: center;
+    padding-bottom: 1.2rem;
+    border-bottom: 1px solid var(--border-color);
+}
+.cart-items-container {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 1.5rem 0;
+}
+.cart-drawer-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(128,128,128,0.12);
+}
+.item-controls {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: rgba(128,128,128,0.1);
+    border-radius: 50px; padding: 2px 10px;
+}
+.item-btn {
+    background: none; border: none; font-size: 1.1rem; cursor: pointer; color: var(--text-heading); font-weight: bold;
+}
+.cart-footer {
+    border-top: 1px solid var(--border-color);
+    padding-top: 1.5rem;
+}
+.cart-total-row {
+    display: flex; justify-content: space-between; font-size: 1.3rem; font-weight: 800; margin-bottom: 1.2rem; color: var(--text-heading);
+}
+
+/* টোস্ট নোটিফিকেশন */
+#toast-notification {
+    position: fixed; bottom: 30px; left: 50%;
+    transform: translateX(-50%) translateY(100px);
+    background: #141210; color: #fff;
+    padding: 12px 24px; border-radius: 50px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    z-index: 5000;
+    font-weight: 600; font-size: 0.95rem;
+    display: flex; align-items: center; gap: 10px;
+    opacity: 0; pointer-events: none;
+    transition: all 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+#toast-notification.show {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1; pointer-events: auto;
+}
+
+/* ভাসমান বাটন */
+#cart-trigger-btn {
+    position: fixed; bottom: 100px; right: 28px;
+    background: var(--gold); color: #fff;
+    padding: 14px 22px; border-radius: 50px;
+    box-shadow: 0 8px 25px rgba(223, 155, 38, 0.45);
+    cursor: pointer; z-index: 1000;
+    display: none; align-items: center; gap: 10px;
+    font-weight: 700; font-size: 0.95rem;
+    transition: transform 0.3s;
+}
+#cart-trigger-btn:hover { transform: scale(1.05); }
+
+#wa-widget { 
+    position: fixed; bottom: 28px; right: 28px; 
+    background: #25D366; width: 56px; height: 56px; 
+    border-radius: 50%; display: flex; align-items: center; justify-content: center; 
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4); z-index: 999; 
+    transition: transform 0.3s; text-decoration: none; 
+}
+#wa-widget:hover { transform: scale(1.1); }
+
+#theme-toggle {
+    position: fixed; bottom: 28px; left: 28px;
+    width: 48px; height: 48px;
+    background: var(--card-bg); border: 1px solid var(--border-color);
+    border-radius: 50%; display: flex; align-items: center; justify-content: center;
+    box-shadow: var(--shadow-soft); cursor: pointer; z-index: 999;
+    font-size: 1.3rem; transition: transform 0.3s;
+}
+#theme-toggle:hover { transform: scale(1.1) rotate(15deg); }
+
+/* ফুটার */
+footer {
+    background: #0d0b0a;
+    color: #d6d3d1;
+    padding: 5rem 0 2rem 0;
+    border-top: 4px solid var(--gold);
+}
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 3rem;
+    margin-bottom: 4rem;
+}
+footer h4 { color: #ffffff; font-size: 1.2rem; margin-bottom: 1.2rem; }
+footer a { color: #a8a29e; text-decoration: none; display: block; margin-bottom: 0.6rem; transition: 0.25s; }
+footer a:hover { color: var(--gold); transform: translateX(3px); }
+.social-links { display: flex; gap: 12px; margin-top: 1.5rem; }
+.social-links a {
+    width: 40px; height: 40px; border-radius: 50%;
+    background: rgba(255,255,255,0.08);
+    display: flex; align-items: center; justify-content: center;
+    transition: 0.3s;
+}
+.social-links a:hover { background: var(--primary); transform: translateY(-3px); }
+.social-links svg { width: 18px; height: 18px; fill: #ffffff; }
+
+@media (max-width: 992px) {
+    .hero-grid, .about-grid, .spectrum-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+    .hero-image-frame { height: 380px; }
+    .floating-seal { bottom: 10px; left: 10px; }
+    .footer-grid { grid-template-columns: 1fr 1fr; }
     
-    <link rel="preload" as="image" href="https://cdn.shopaccino.com/refresh/articles/shutterstock1503700925-670186_l.jpg?v=681">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;800;900&family=Inter:wght@300;400;500;700&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;800;900&family=Inter:wght@300;400;500;700&display=swap" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;800;900&family=Inter:wght@300;400;500;700&display=swap"></noscript>
-    
-    <style>
-    :root {
-        --p: #d4af37; --s: #1a1a1a; --bg: #faf9f6; 
-        --nav: rgba(250,249,246,0.9); --card: #ffffff;
-        --radius: 0px; --shadow: 0 15px 35px rgba(0,0,0,0.05); --border: 1px solid #eaeaea;
-        --h-font: 'Playfair Display', sans-serif; --b-font: 'Inter', sans-serif;
-        
-        /* MANUAL OVERRIDES */
-        --txt-h: #b91c1c;
-        --txt-b: #334155;
-        --h1-size: 3.54rem;
-        --p-size: 1.1rem;
-        --cta-bg: #d97706;
-        --cta-txt: #ffffff;
+    nav#main-navbar .nav-links {
+        position: fixed; top: 75px; left: -100%; width: 100vw; height: calc(100vh - 75px);
+        background: var(--bg); flex-direction: column; padding: 3rem 2rem;
+        transition: left 0.35s ease; gap: 1.8rem;
+    }
+    nav#main-navbar .nav-links.active { left: 0; }
+    .mobile-menu { display: block; }
+}
+@media (max-width: 576px) {
+    .footer-grid { grid-template-columns: 1fr; }
+    .store-controls { flex-direction: column; align-items: stretch; }
+}
+
+  /* ===================================================
+   MOBILE COMPATIBILITY & APP-LIKE POLISH (2026 ENGINE)
+   =================================================== */
+
+/* 1. Prevent Horizontal Page Wobble */
+html, body {
+    overflow-x: clip;
+    max-width: 100vw;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* 2. Fix iOS Safari Auto-Zoom on Input Focus */
+@media (max-width: 768px) {
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea,
+    select {
+        font-size: 16px !important; /* Disables unwanted iOS zoom */
+    }
+}
+
+  /* ========================================================
+   REDUCE SECTION-TO-SECTION GAPS ON MOBILE (PHONES & TABLETS)
+   ======================================================== */
+@media (max-width: 768px) {
+    /* 1. Tighten all section paddings from 6rem (96px) down to 2rem - 2.5rem (32px - 40px) */
+    .hero {
+        padding: 2rem 0 2rem 0 !important;
+    }
+
+    .heat-spectrum-section,
+    .features-section,
+    .store-section,
+    .about-section,
+    .faq-section,
+    section {
+        padding: 2.5rem 0 !important; /* Replaces 5rem - 6rem padding */
+    }
+
+    /* 2. Remove extra top margins between stacked sections */
+    .heat-spectrum-section {
+        margin-top: 0 !important;
+    }
+
+    /* 3. Reduce heading bottom margins from 3.5rem - 4rem down to 1.5rem */
+    .section-title {
+        margin-bottom: 1.8rem !important;
     }
     
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; font-size: 16px; }
-    
-    body { 
-        background: var(--bg); 
-        color: var(--txt-b); 
-        font-family: var(--b-font); 
-        font-size: var(--p-size); 
-        line-height: 1.8; /* Industry standard for high readability */
-        letter-spacing: 0.01em; /* Subtle air between characters */
-        overflow-x: hidden; 
-        width: 100vw; max-width: 100%;
-    }
-    
-    iframe, model-viewer { max-width: 100%; }
-    
-    h1, h2, h3, h4 { 
-        font-family: var(--h-font); 
-        color: var(--txt-h); 
-        line-height: 1.1; 
-        font-weight: 800;
-        margin-bottom: 1.5rem;
+    .section-title h2 {
+        margin-bottom: 0.3rem !important;
     }
 
-    h1 { font-size: var(--h1-size);  }
-    h2 { font-size: calc(var(--h1-size) * 0.7); }
-    h3 { font-size: 1.6rem; color: var(--txt-h); }
-
-    p { 
-        margin-bottom: 2rem; 
-        opacity: 0.9;
-        font-weight: 400;
-        text-align: justify; /* THIS MAKES THE TEXT ARRANGEMENT STRAIGHT */
-        text-justify: inter-word; /* Balances the gaps between words */
-        hyphens: auto; /* Prevents awkward gaps on mobile */
-        -webkit-hyphens: auto;
-    }
-    
-    /* 2026 ADVANCED HERO ENGINE */
-    .hero { position: relative; min-height: 95vh; overflow: hidden; display: flex; text-align: center; justify-content: center; padding-top: 120px; }
-    .carousel-slide { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-size: cover; background-position: center; opacity: 0; transition: opacity 1.5s cubic-bezier(0.4, 0, 0.2, 1); z-index: 0; transform: scale(1.05); }
-    .carousel-slide.active { opacity: 1; transform: scale(1); }
-    .hero-overlay { background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.8) 100%); position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; }
-    .hero-content { z-index: 2; position: relative; width: 100%; padding: 0 5%; max-width: 1400px; }
-    .hero h1 { color: #ffffff !important; text-shadow: 0 10px 30px rgba(0,0,0,0.5); -webkit-text-fill-color: #fff; background: none; }
-    .hero p { color: rgba(255,255,255,0.9) !important; font-size: clamp(1.2rem, 2vw, 1.4rem); max-width: 800px; margin: 0 auto 2.5rem auto; font-weight: 400; }
-    
-    /* BENTO-STYLE GRID LAYOUTS */
-    .container { max-width: 1300px; margin: 0 auto; padding: 0 2rem; }
-    main section { padding: clamp(2rem, 8vw, 8rem) 0; position: relative; }
-    .section-head { text-align: center; margin-bottom: clamp(3rem, 5vw, 5rem); }
-    .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2.5rem; }
-    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
-    
-    /* FIX: Added missing contact-grid */
-    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: stretch; }
-    
-    /* 2026 CARD PHYSICS & MICRO-INTERACTIONS */
-    .card { 
-        background: var(--card); 
-        border-radius: var(--radius); 
-        border: var(--border); 
-        box-shadow: var(--shadow);
-        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
-        display: flex; 
-        flex-direction: column; 
-        overflow: hidden; 
-        position: relative;
-        color: var(--txt-b) !important;
-        
+    .section-title p {
+        font-size: 0.98rem !important;
+        margin-bottom: 0 !important;
     }
 
-    /* Premium Top-Border Glow */
-    .card::before { 
-        content: ''; 
-        position: absolute; 
-        top: 0; left: 0; right: 0; 
-        height: 4px; 
-        background: linear-gradient(90deg, var(--p), var(--s)); 
-        opacity: 0; 
-        transition: 0.3s; 
-        z-index: 5;
-    }
-
-    .card:hover { 
-        transform: translateY(-10px); 
-        box-shadow: 0 25px 50px -12px rgba(0,0,0,0.2); 
-    }
-
-    .card:hover::before { 
-        opacity: 1; 
-    }
-    
-    /* REFINED PRODUCT TYPOGRAPHY */
-    .card h3 { 
-        font-size: 1.35rem !important;
-        font-weight: 800; 
-        line-height: 1.2; 
-        margin-bottom: 0.4rem; 
-        color: var(--txt-h) !important;
-        letter-spacing: -0.02em;
-    }
-
-    .card-body { 
-        padding: 2rem; 
-        display: flex; 
-        flex-direction: column; 
-        flex-grow: 1; 
-    }
-
-    .card-desc { 
-        font-size: 0.95rem; 
-        line-height: 1.6;
-        opacity: 0.7; 
-        margin-bottom: 1.5rem; 
-        display: -webkit-box; 
-        -webkit-line-clamp: 2;
-        -webkit-box-orient: vertical; 
-        overflow: hidden; 
-        color: var(--txt-b);
-    }
-
-    .prod-img { 
-        width: 100%; 
-        height: 260px;
-        object-fit: cover; 
-        transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1); 
-    }
-
-    .card:hover .prod-img { 
-        transform: scale(1.08); 
-    }
-    
-    /* ENTERPRISE BUTTON COMPONENTS */
-    .btn { 
-        display: inline-flex; align-items: center; justify-content: center;
-        padding: 1.2rem 2.5rem; border-radius: var(--radius); 
-        font-weight: 800; text-decoration: none; transition: all 0.3s ease; 
-        text-transform: uppercase; cursor: pointer; border: none; text-align: center;
-        font-size: 0.95rem; letter-spacing: 1.5px; position: relative; overflow: hidden;
-    }
-    .btn-primary { background: var(--p); color: #fff !important; }
-    .btn-accent { background: var(--s); color: #fff !important; }
-    .btn:hover { transform: translateY(-3px) scale(1.02); filter: brightness(1.15); box-shadow: 0 10px 25px -5px var(--p); }
-    
-    /* GLASSMORPHISM NAVIGATION */
-    nav#main-navbar { 
-        position: fixed; top: 0; width: 100%; z-index: 2000; /* FIXED: Elevated above everything */
-        background: var(--nav); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
-        border-bottom: 1px solid rgba(128,128,128,0.1); padding: 1.2rem 0; transition: top 0.3s, background 0.3s; 
-    }
-    .nav-flex { display: flex; justify-content: space-between; align-items: center; }
-    .nav-links { display: flex; align-items: center; gap: 2rem; }
-    .nav-links a { text-decoration: none; font-weight: 600; color: var(--txt-h); font-size: 0.95rem; transition: 0.2s; position: relative; }
-    .nav-links a::after { content: ''; position: absolute; width: 0; height: 2px; bottom: -4px; left: 0; background-color: var(--p); transition: 0.3s; }
-    .nav-links a:hover::after { width: 100%; }
-    .nav-links a:hover { color: var(--p); }
-    .mobile-menu { display: none; font-size: 1.8rem; cursor: pointer; background:none; border:none; color:var(--txt-h); z-index: 2001; } /* Ensure hamburger is clickable */
-    
-    /* PREMIUM ASYMMETRICAL PRODUCT VIEW */
-    .detail-view { 
-        display: grid; 
-        grid-template-columns: 0.8fr 1.2fr;
-        gap: 6rem; 
-        align-items: start; 
-        background: var(--card); 
-        padding: 5rem; 
-        border-radius: 32px; 
-        box-shadow: var(--shadow); 
-        border: var(--border); 
-        position: relative;
-    }
-
-    .product-media-column { 
-        position: sticky; 
-        top: 150px;
-    }
-
-    .product-price-tag { 
-        display: inline-block;
-        padding: 0.5rem 1.5rem;
-        background: rgba(5, 150, 105, 0.1);
-        color: #059669; 
-        font-size: 2rem; 
-        font-weight: 900; 
-        border-radius: 50px;
-        margin-bottom: 2rem; 
-    }
-
-    .product-info-column h1 { 
-        font-size: clamp(2.5rem, 4vw, 4.5rem); 
-        margin-bottom: 1.5rem; 
-        line-height: 1;
-    }
-
-    .product-specs-container {
-        font-size: 1.15rem;
-        line-height: 1.8;
-        color: var(--txt-b);
-        opacity: 0.9;
-    }
-
-    .product-specs-container strong {
-        display: block;
-        margin-top: 2rem;
-        font-size: 1.3rem;
-        color: var(--p);
-    }
-
-    .product-meta-box { background: rgba(128,128,128,0.05); padding: 2rem; border-radius: var(--radius); margin-bottom: 2.5rem; border-left: 5px solid var(--p); }
-    .gallery-thumbs { display: flex; gap: 15px; margin-top: 20px; overflow-x: auto; padding-bottom:10px; }
-    .thumb { width: 80px; height: 80px; border-radius: var(--radius); object-fit: cover; cursor: pointer; border: 2px solid transparent; opacity: 0.6; transition: 0.3s; }
-    .thumb:hover, .thumb.active { border-color: var(--p); opacity: 1; transform: translateY(-5px); }
-    
-    /* RESPONSIVE PRICING TABLES */
-    .pricing-wrapper { overflow-x: auto; -webkit-overflow-scrolling: touch; width: 100%; margin: 0 auto; box-shadow: var(--shadow); border-radius: var(--radius); background: var(--card); border: var(--border); }
-    .pricing-table { width: 100%; border-collapse: collapse; min-width: 800px; }
-    .pricing-table th { background: var(--p); color: white; padding: 2rem; text-align: left; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px; }
-    .pricing-table td { padding: 2rem; border-bottom: 1px solid rgba(128,128,128,0.1); color: var(--txt-b); font-size: 1.1rem; }
-    .pricing-table tr:hover td { background: rgba(128,128,128,0.03); }
-
-    /* MODERN FOOTER */
-    footer { background: #0f172a; color: #f8fafc; padding: 6rem 0 3rem 0; margin-top: auto; border-top: 4px solid var(--p); }
-    .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 4rem; }
-    footer a { color: #94a3b8 !important; text-decoration: none; display: block; margin-bottom: 1rem; transition: 0.3s; font-size: 1.05rem; }
-    footer a:hover { color: #ffffff !important; transform: translateX(5px); }
-    .social-icon { width: 28px; height: 28px; fill: #94a3b8; transition: 0.3s; }
-    .social-icon:hover { fill: var(--p); transform: scale(1.2) translateY(-3px); }
-
-    /* ACCESSIBILITY & UTILS */
-    .reveal { opacity: 0; transform: translateY(40px); transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94); z-index: 10; position:relative; }
-    .reveal.active { opacity: 1; transform: translateY(0); }
-    details { background: var(--card); border: var(--border); border-radius: var(--radius); margin-bottom: 1.5rem; padding: 1.5rem; cursor: pointer; box-shadow: 0 4px 6px rgba(0,0,0,0.02); transition:0.3s; }
-    details:hover { box-shadow: var(--shadow); transform: translateX(5px); border-left: 4px solid var(--p); }
-    details summary { font-weight: 800; font-size: 1.2rem; outline: none; }
-
-    /* SMART CART PHYSICS & OVERLAYS */
-    #cart-float { position: fixed; bottom: 100px; right: 30px; background: var(--p); color: #fff; padding: 15px 25px; border-radius: 50px; box-shadow: 0 10px 25px rgba(0,0,0,0.3); cursor: pointer; z-index: 1000; display: flex; align-items: center; gap: 10px; font-weight: 800; transition: 0.3s; border: 2px solid rgba(255,255,255,0.1); }
-    #cart-float:hover { transform: scale(1.05) translateY(-5px); }
-    
-    #cart-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.7); backdrop-filter: blur(5px); z-index: 3000; }
-    
-    #cart-modal { display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: var(--card); width: 90%; max-width: 500px; max-height: 90vh; overflow-y: auto; padding: 2.5rem; border-radius: 24px; box-shadow: 0 30px 60px rgba(0,0,0,0.4); z-index: 3001; border: var(--border); color: var(--txt-b); }
-    #cart-modal h3 { margin-bottom: 1.5rem; color: var(--p); font-size: 1.8rem; border-bottom: 1px solid rgba(128,128,128,0.1); padding-bottom: 1rem; }
-    
-    .cart-item { display: flex; justify-content: space-between; border-bottom: 1px solid rgba(128,128,128,0.1); padding: 15px 0; font-size: 1.1rem; }
-    
-    .local-vault { background: rgba(128,128,128,0.05); padding: 1.5rem; border-radius: 12px; margin-top: 1.5rem; border: 1px solid rgba(128,128,128,0.1); }
-    .local-vault input { width: 100%; padding: 1rem; margin-top: 0.5rem; border-radius: 8px; border: var(--border); background: var(--bg); color: var(--txt-b); font-size: 1rem; }
-    
-    /* POPUP PHYSICS */
-    #lead-popup { display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: var(--card); padding: 3.5rem; text-align: center; border-radius: var(--radius); z-index: 3001; box-shadow: 0 30px 60px rgba(0,0,0,0.5); width: 90%; max-width: 500px; border: var(--border); color: var(--txt-b); }
-    .close-popup { position: absolute; top: 15px; right: 20px; cursor: pointer; font-size: 2rem; opacity: 0.5; transition: 0.3s; }
-    .close-popup:hover { opacity: 1; color: var(--s); }
-
-    /* =========================================
-       2026 STRUCTURAL LAYOUT UPGRADES 
-       ========================================= */
-       
-    /* 1. ASYMMETRICAL HERO WITH FLOATING GLASS */
-    .modern-hero { position: relative; min-height: 100vh; display: flex; text-align: center; justify-content: center; padding-top: 120px; }
-    .modern-hero-bg { position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: radial-gradient(circle at 50% 50%, rgba(128,128,128,0.05) 0%, transparent 50%); z-index: -1; animation: rotate 60s linear infinite; }
-    .modern-hero-grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: 4rem; align-items: center; width: 100%; }
-    
-    .hero-badge { display: inline-block; padding: 0.5rem 1rem; background: rgba(128,128,128,0.1); border: 1px solid rgba(128,128,128,0.2); border-radius: 50px; font-size: 0.9rem; font-weight: 700; margin-bottom: 1.5rem; color: var(--txt-h); text-transform: uppercase; letter-spacing: 1px; }
-    .hero-btn-group { display: flex; gap: 1rem; flex-wrap: wrap; }
-    .btn-outline-light { background: transparent; color: var(--txt-h) !important; border: 2px solid var(--txt-h); }
-    .btn-outline-light:hover { background: var(--txt-h); color: var(--bg) !important; }
-    
-    .modern-hero-visual { position: relative; width: 100%; height: 600px; display: flex; align-items: center; justify-content: center; }
-    .visual-frame { width: 100%; height: 100%; border-radius: 32px; overflow: hidden; position: relative; z-index: 2; box-shadow: 0 30px 60px rgba(0,0,0,0.15); border: 8px solid var(--card); }
-    .floating-element { position: absolute; border-radius: 50%; filter: blur(60px); z-index: 1; opacity: 0.6; }
-    .glow-1 { width: 300px; height: 300px; background: var(--p); top: -50px; right: -50px; }
-    .glow-2 { width: 250px; height: 250px; background: var(--s); bottom: -50px; left: -50px; }
-    
-    /* 2. FLOATING STATS RIBBON */
-    .stats-ribbon-container { margin-top: -60px; position: relative; z-index: 100; padding: 0 20px; }
-    .stats-ribbon { background: var(--card); border-radius: 24px; padding: 3rem; display: flex; justify-content: space-around; align-items: center; box-shadow: var(--shadow); border: var(--border); backdrop-filter: blur(20px); }
-    .stat-block { text-align: center; }
-    .stat-block h3 { font-size: 3.5rem; color: var(--p); margin-bottom: 0.5rem; line-height: 1; }
-    .stat-block p { font-size: 1.1rem; font-weight: 600; color: var(--txt-b); text-transform: uppercase; letter-spacing: 1px; opacity: 0.8; margin: 0; }
-    .stat-divider { width: 2px; height: 60px; background: rgba(128,128,128,0.2); }
-
-    /* 3. BENTO-STYLE FEATURES GRID */
-    .section-subtitle { font-size: 1.2rem; color: var(--txt-b); opacity: 0.7; margin-top: 1rem; text-transform: uppercase; letter-spacing: 2px; font-weight: 600; }
-    .modern-grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; }
-    .modern-feature-card { background: var(--card); padding: 3rem; border-radius: 24px; box-shadow: var(--shadow); border: var(--border); transition: 0.4s; display: flex; flex-direction: column; gap: 1.5rem; }
-    .modern-feature-card:hover { transform: translateY(-10px); border-color: var(--p); }
-    .feature-icon-wrapper { width: 64px; height: 64px; border-radius: 16px; background: rgba(128,128,128,0.05); display: flex; align-items: center; justify-content: center; color: var(--s); border: 1px solid rgba(128,128,128,0.1); }
-    .feature-content h3 { font-size: 1.5rem; margin-bottom: 1rem; color: var(--txt-h); }
-    
-    /* 4. PREMIUM ABOUT SECTION */
-    .modern-about { background: rgba(128,128,128,0.02); overflow: hidden; }
-    .about-visual { position: relative; }
-    .about-main-img { width: 100%; height: 600px; object-fit: cover; border-radius: 32px; box-shadow: var(--shadow); }
-    .about-experience-badge { position: absolute; bottom: -30px; right: -30px; background: var(--p); color: #fff; padding: 2rem; border-radius: 24px; box-shadow: 0 20px 40px rgba(0,0,0,0.2); display: flex; align-items: center; gap: 1rem; border: 4px solid var(--card); }
-    .about-experience-badge strong { font-size: 3rem; line-height: 1; color: #fff; }
-    .about-experience-badge span { font-size: 1rem; font-weight: 700; text-transform: uppercase; line-height: 1.2; }
-    .about-lead { font-size: 1.25rem; line-height: 1.8; opacity: 0.9; color: var(--txt-b); border-left: 4px solid var(--s); padding-left: 1.5rem; }
-    
-    @keyframes rotate { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
-
-    /* LANGUAGE MODAL PHYSICS */
-    #lang-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.7); backdrop-filter: blur(5px); z-index: 3000; }
-    #lang-modal { display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: var(--card); width: 90%; max-width: 500px; padding: 3rem; border-radius: 24px; box-shadow: 0 30px 60px rgba(0,0,0,0.4); z-index: 3001; border: var(--border); color: var(--txt-b); }
-    #lang-modal h3 { margin-bottom: 1.5rem; color: var(--p); font-size: 1.8rem; border-bottom: 1px solid rgba(128,128,128,0.1); padding-bottom: 1rem; text-align:center; }
-    .lang-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
-    .lang-opt { display: flex; align-items: center; justify-content: center; width: 100%; padding: 1.2rem; border: var(--border); border-radius: 12px; cursor: pointer; font-weight: 700; transition: 0.3s; background: var(--bg); }
-    .lang-opt:hover { background: var(--p); color: #fff; transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
-
-    /* TOP PROMO BAR PHYSICS */
-    #top-bar { position: fixed; top: 0; left: 0; width: 100%; background: var(--s); color: #fff; text-align: center; padding: 12px; z-index: 2005; font-weight: 800; font-size: 0.95rem; letter-spacing: 1px; transition: transform 0.3s; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
-    #top-bar a { color: #fff !important; text-decoration: none; text-underline-offset: 4px; margin-left: 10px; transition: 0.3s; }
-    #top-bar a:hover { opacity: 0.8; }
-
-    /* DARK MODE TOGGLE PHYSICS */
-    #theme-toggle { position: fixed; bottom: 30px; left: 30px; width: 50px; height: 50px; background: var(--card); border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 25px rgba(0,0,0,0.2); cursor: pointer; z-index: 1000; font-size: 1.5rem; border: var(--border); transition: 0.3s; }
-    #theme-toggle:hover { transform: scale(1.1) rotate(15deg); border-color: var(--p); }
-
-    /* VOICE SEARCH FLOATING PHYSICS */
-    #voice-btn { 
-        position: fixed; 
-        bottom: 170px;
-        right: 30px; 
-        background: var(--p); 
-        color: #fff; 
-        border-radius: 50%; 
-        width: 50px; 
-        height: 50px; 
-        display: flex; 
-        align-items: center; 
-        justify-content: center; 
-        font-size: 1.2rem; 
-        cursor: pointer; 
-        box-shadow: 0 10px 25px rgba(0,0,0,0.2); 
-        z-index: 1000; 
-        border: 2px solid rgba(255,255,255,0.1);
-        transition: 0.3s;
-    }
-    #voice-btn:hover { transform: scale(1.1); background: var(--s); }
-
-    /* VOICE LISTENING ANIMATION */
-    .listening { 
-        animation: voice-pulse 1.5s infinite; 
-        background: var(--s) !important; 
-    }
-    
-    @keyframes voice-pulse { 
-        0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 0, 60, 0.4); } 
-        70% { transform: scale(1.2); box-shadow: 0 0 0 20px rgba(255, 0, 60, 0); } 
-        100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 0, 60, 0); } 
-    }
-
-/* --- SHARE BUTTON & ICON CONSTRAINTS --- */
-    .share-row { 
-        display: flex; 
-        gap: 12px; 
-        flex-wrap: wrap; 
-        align-items: center;
-        margin-top: 1.5rem;
-    }
-
-    .share-btn { 
-        width: 45px !important; 
-        height: 45px !important; 
-        display: flex !important; 
-        align-items: center; 
-        justify-content: center; 
-        border-radius: 12px; 
-        transition: 0.3s;
-        text-decoration: none;
-    }
-
-    /* This targets the SVGs specifically to stop them from becoming giant */
-    .share-btn svg, .share-row svg { 
-        width: 22px !important; 
-        height: 22px !important; 
-        fill: white; 
-    }
-
-    .bg-wa { background: #25D366; }
-    .bg-fb { background: #1877F2; }
-    .bg-x { background: #000000; }
-    .bg-li { background: #0A66C2; }
-    .bg-link { background: #64748b; }
-    
-
-    /* --- PRODUCT DETAIL SIZE OVERRIDES --- */
-    
-    /* 1. The Title (The Consultant Pro) */
-    .product-info-column h1 { 
-        font-size: clamp(1.8rem, 3vw, 2.5rem) !important; 
+    /* 4. Reduce large margins below paragraphs & cards */
+    p {
         margin-bottom: 1rem !important;
     }
 
-    /* 2. The Price ($499) */
-    .product-price-tag { 
-        font-size: 1.4rem !important; 
-        padding: 0.4rem 1.2rem !important;
-        margin-bottom: 1.5rem !important;
+    .spectrum-grid,
+    .grid-3 {
+        margin-top: 1.2rem !important;
+        gap: 1.2rem !important;
     }
 
-    /* 3. The Description Text (The Ultimate Industrial...) */
-    .product-specs-container, .product-specs-container p {
-        font-size: 1rem !important; 
-        line-height: 1.6 !important;
-        opacity: 0.8 !important;
+    /* 5. Tighter footer padding */
+    footer {
+        padding: 3rem 0 2rem 0 !important;
     }
-    
-    /* Shrink the back button too for balance */
-    .back-btn {
-        font-size: 0.75rem !important;
-        margin-bottom: 20px !important;
+    .footer-grid {
+        margin-bottom: 2rem !important;
+        gap: 1.8rem !important;
+    }
+}
+
+/* Extra compact spacing for smaller phones (under 480px) */
+@media (max-width: 480px) {
+    .hero {
+        padding: 1.8rem 0 1.8rem 0 !important;
     }
 
-    /* ==========================================================
-       MOBILE OPTIMIZATION (THE FIX)
-       ========================================================== */
-    @media (max-width: 992px) {
-        /* Nav Menu Collapse Fixed Layering */
-        nav#main-navbar .nav-links { 
-            position: absolute; 
-            top: 100%; 
-            left: -100%; 
-            width: 100vw; 
-            height: 100dvh; 
-            background: var(--bg); flex-direction: column; padding: 3rem; 
-            transition: left 0.4s ease; align-items: center; justify-content: flex-start; 
-            gap: 2.5rem; z-index: 1999; overflow-y: auto; 
-        }
-        nav#main-navbar .nav-links.active { left: 0; }
-        .nav-links a { font-size: 1.5rem; }
-        .mobile-menu { display: block; }
-        
-        /* Grid Breakdowns */
-        .about-grid, .detail-view, .grid-3, .modern-grid-3, .contact-grid { grid-template-columns: 1fr !important; gap: 3rem; }
-        
-        /* Hero Refinements for small screens */
-        .modern-hero-grid { grid-template-columns: 1fr; text-align: center; }
-        .modern-hero-text { text-align: center; align-items: center; justify-content: center; }
-        .hero-btn-group { justify-content: center; }
-        .modern-hero-visual { height: 400px; }
-        .hero { padding-top: 100px; text-align: center; }
-        
-        /* Detail View Reset */
-        .detail-view { padding: 2rem; gap: 2rem; }
-        .product-media-column { position: relative; top: 0; margin-bottom: 2rem; }
-        
-        /* Stats Ribbon Stacking securely */
-        .stats-ribbon { flex-direction: column; padding: 2.5rem 1.5rem; gap: 2rem; }
-        .stat-divider { width: 100%; height: 2px; }
-        .stats-ribbon-container { margin-top: -30px; }
-        
-        /* Badges overlapping fixed */
-        .about-experience-badge { position: relative; bottom: 0; right: 0; margin-top: -30px; margin-left: auto; margin-right: auto; width: fit-content; z-index: 10; }
-        
-        .pricing-table th, .pricing-table td { padding: 1.2rem 1rem; font-size: 0.95rem; }
+    .heat-spectrum-section,
+    .features-section,
+    .store-section,
+    .about-section,
+    .faq-section,
+    section {
+        padding: 2rem 0 !important;
+    }
+
+    .section-title {
+        margin-bottom: 1.4rem !important;
+    }
+}
+
+/* 3. Mobile Layout Scaling & Fluid Typography */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 1.2rem;
     }
     
-   @media (max-width: 480px) {
-         p { 
-            text-align: left; /* Optional: We usually switch back to left-align on very narrow screens to prevent 'rivers' of white space */
-            hyphens: auto; 
-        }
-        /* 1. ELIMINATE THE BLUE GAP & HORIZONTAL GLITCHES */
-        html, body { 
-            width: 100% !important; 
-            margin: 0 !important; 
-            padding: 0 !important; 
-            overflow-x: hidden !important; 
-            background: var(--bg); /* Matches background to theme to hide gaps */
-        }
-
-        .container { 
-            width: 100% !important; 
-            max-width: 100% !important; 
-            padding: 0 24px !important; /* Proper breathing room for text */
-            margin: 0 auto !important;
-            box-sizing: border-box !important;
-        }
-
-        /* 2. FOOTER SAFE ZONE (Prevents buttons from covering links) */
-        footer { 
-            padding: 4rem 0 10rem 0 !important; /* Extra bottom padding so you can scroll past the buttons */
-        }
-        .footer-grid { 
-            display: flex !important;
-            flex-direction: column !important;
-            gap: 3rem !important; 
-            text-align: left !important;
-        }
-
-        /* 3. HERO & TEXT SCALING */
-        h1, #hero-title, .modern-hero-text h1 { 
-            font-size: 2.4rem !important; 
-            line-height: 1.1 !important; 
-            margin-bottom: 1.5rem !important;
-        }
-        
-        #hero-sub, .modern-hero-text p {
-            font-size: 1.1rem !important; 
-            opacity: 0.8;
-            margin-bottom: 2.5rem !important;
-        }
-
-        /* 4. BUTTON STACKING */
-        .hero-btn-group { 
-            display: flex; 
-            flex-direction: column !important; 
-            gap: 12px; 
-            width: 100%; 
-        }
-        .hero-btn-group .btn { width: 100% !important; }
-
-        /* 5. FLOATING BUTTON TRAFFIC CONTROL (Corner Pinning) */
-        /* We move them to 10px from the edge so they don't block the center text */
-        #wa-widget { 
-            bottom: 15px !important; 
-            right: 10px !important; 
-            scale: 0.8; 
-        }
-        #theme-toggle { 
-            bottom: 15px !important; 
-            left: 10px !important; 
-            scale: 0.8; 
-            background: rgba(255,255,255,0.9); /* Makes toggle stand out on dark footers */
-            border: 1px solid rgba(0,0,0,0.1);
-        }
-        #cart-float { 
-            bottom: 80px !important; 
-            right: 10px !important; 
-            scale: 0.8; 
-        }
-        #voice-btn { 
-            bottom: 140px !important; 
-            right: 10px !important; 
-            scale: 0.8; 
-        }
-
-        /* 6. COMPONENT FIXES */
-        .modern-hero-visual { height: 300px !important; margin-top: 2rem !important; }
-        .visual-frame { border-width: 4px !important; }
-        .stat-block h3 { font-size: 2.8rem !important; }
-        .modern-feature-card { padding: 2rem !important; }
-        
-        /* Pricing Table Mobile Fix */
-        .pricing-table { min-width: 100% !important; }
-        .pricing-table th, .pricing-table td { padding: 1rem 0.5rem !important; font-size: 0.85rem !important; }
+    /* Hero Section Responsive */
+    .hero {
+        padding: 2.5rem 0 3.5rem 0;
     }
-    </style>
+    .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .hero-text-col {
+        text-align: left;
+    }
+    .hero h1 {
+        font-size: clamp(1.85rem, 7vw, 2.5rem) !important;
+        line-height: 1.35;
+    }
+    .hero p {
+        font-size: 1rem;
+        margin-bottom: 1.6rem;
+    }
+    .hero-cta-group {
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+        width: 100%;
+    }
+    .hero-cta-group .btn {
+        width: 100%;
+        justify-content: center;
+        padding: 0.95rem 1.4rem;
+        font-size: 1.05rem;
+    }
     
+    /* Hero Image Aspect Ratio Fix */
+    .hero-image-frame {
+        height: auto;
+        aspect-ratio: 4 / 3;
+        border-radius: 20px;
+    }
+    .floating-seal {
+        bottom: 10px;
+        left: 10px;
+        padding: 0.8rem 1.2rem;
+        border-radius: 14px;
+    }
+    .floating-seal strong {
+        font-size: 1.5rem;
+    }
+    .floating-seal span {
+        font-size: 0.8rem;
+    }
     
-    <script defer>if(new Date().getHours() >= 19 || new Date().getHours() <= 6) document.body.classList.add('dark-mode'); let variant = localStorage.getItem('titan_ab') || (Math.random() > 0.5 ? 'A' : 'B'); localStorage.setItem('titan_ab', variant); if(variant === 'B') document.documentElement.style.setProperty('--s', '#10b981'); function startVoiceSearch() { if (!('webkitSpeechRecognition' in window)) return alert('Voice search not supported in this browser.'); const rec = new webkitSpeechRecognition(); rec.lang = 'en-US'; const btn = document.getElementById('voice-btn'); btn.classList.add('listening'); rec.onresult = (e) => { const transcript = e.results[0][0].transcript.toLowerCase(); alert('Searching for: ' + transcript); document.querySelectorAll('.card').forEach(c => { c.style.display = c.innerText.toLowerCase().includes(transcript) ? 'flex' : 'none'; }); }; rec.onend = () => btn.classList.remove('listening'); rec.start(); }</script>
+    /* 3-Tier Chilli & Feature Cards */
+    .spectrum-grid,
+    .grid-3 {
+        grid-template-columns: 1fr !important;
+        gap: 1.4rem;
+    }
+    .heat-card,
+    .pillar-card {
+        padding: 1.5rem;
+    }
+    
+    /* Store Controls & Search */
+    .store-controls {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1rem;
+    }
+    .filter-pills {
+        overflow-x: auto;
+        white-space: nowrap;
+        padding-bottom: 6px;
+        flex-wrap: nowrap;
+        -webkit-overflow-scrolling: touch;
+    }
+    .filter-pill {
+        flex-shrink: 0;
+        padding: 0.55rem 1.2rem;
+        font-size: 0.92rem;
+    }
+    .search-input-box {
+        width: 100%;
+    }
+    .search-input-box input {
+        width: 100%;
+    }
+    
+    /* Product Card Mobile Spacing */
+    .product-img-box {
+        height: 220px;
+    }
+    .product-actions {
+        gap: 0.5rem;
+    }
+    .product-actions .btn {
+        padding: 0.75rem 0.5rem;
+        font-size: 0.95rem;
+    }
+
+    /* 4. Full-Screen Smooth Cart Drawer on Mobile */
+    #cart-drawer {
+        width: 100% !important;
+        max-width: 100% !important;
+        right: -100%;
+        padding: 1.5rem 1.2rem;
+        /* iOS Safe Area Padding */
+        padding-bottom: calc(1.5rem + env(safe-area-inset-bottom, 20px));
+    }
+    .cart-drawer-item {
+        padding: 0.85rem 0;
+    }
+    .item-controls {
+        gap: 12px;
+        padding: 4px 12px;
+    }
+    .item-btn {
+        min-width: 36px;
+        min-height: 36px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.3rem;
+    }
+
+    /* 5. Mobile Navigation Overlay */
+    nav#main-navbar .nav-links {
+        position: fixed;
+        top: 75px;
+        left: -100%;
+        width: 100vw;
+        height: calc(100dvh - 75px);
+        background: var(--card-bg);
+        flex-direction: column;
+        padding: 2.5rem 1.5rem;
+        transition: left 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+        gap: 1.4rem;
+        box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        overflow-y: auto;
+    }
+    nav#main-navbar .nav-links.active {
+        left: 0;
+    }
+    nav#main-navbar .nav-links a {
+        font-size: 1.2rem;
+        width: 100%;
+        text-align: center;
+        padding: 8px 0;
+    }
+    nav#main-navbar .nav-links .btn {
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+
+    /* 6. Floating Action Buttons (Thumb Zone Layout) */
+    /* Prevents overlapping between WhatsApp, Cart, and Theme buttons */
+    #wa-widget {
+        bottom: calc(20px + env(safe-area-inset-bottom, 0px)) !important;
+        right: 18px !important;
+        width: 52px !important;
+        height: 52px !important;
+    }
+    #cart-trigger-btn {
+        bottom: calc(82px + env(safe-area-inset-bottom, 0px)) !important;
+        right: 18px !important;
+        padding: 11px 18px !important;
+        font-size: 0.88rem !important;
+    }
+    #theme-toggle {
+        bottom: calc(20px + env(safe-area-inset-bottom, 0px)) !important;
+        left: 18px !important;
+        width: 44px !important;
+        height: 44px !important;
+    }
+    
+    /* Footer Safe Space for Floating Buttons */
+    footer {
+        padding-bottom: calc(5rem + env(safe-area-inset-bottom, 20px)) !important;
+    }
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 2.2rem;
+    }
+}
+</style>
 </head>
 <body>
-    <main>
+  <div id="top-bar">
+    🌶️ সরাসরি বর্ধমানের কারখানা থেকে আপনার হেঁশেলে: উচ্চ কারকিউমিন হলুদ এবং ৩-স্তরের বিশেষ লঙ্কা সংকলন!
+    <a href="#inventory">টাটকা ব্যাচ অর্ডার করুন →</a>
+</div>
+
+<!-- মূল ন্যাভবার -->
+<nav id="main-navbar">
+    <div class="container nav-flex">
+        <a href="index.html" class="brand-logo" aria-label="বল্লভ মশলা হোম">
+            <div class="brand-icon">ব</div>
+            <span class="brand-name">বল্লভ মশলা</span>
+        </a>
         
-    <div id="top-bar"><a href="#inventory"></a></div>
-    <nav id="main-navbar">
-        <div class="container nav-flex">
-            <a href="index.html" aria-label="Home" style="text-decoration:none;"><span style="font-weight:900; font-size:1.5rem; color:var(--p)">Ballab Masala</span></a>
-            <div class="mobile-menu" onclick="document.querySelector('.nav-links').classList.toggle('active')">☰</div>
-            <div class="nav-links">
-                <a href="index.html" onclick="toggleMenu()">Home</a>
-                <a href="index.html#features" onclick="toggleMenu()">Features</a>
-                
-                <a href="index.html#inventory" onclick="toggleMenu()">Store</a>
-                
-                
-                
-                <a href="contact.html" onclick="toggleMenu()">Contact</a>
-                <a href="tel:919734239509" class="btn btn-accent" style="padding:0.6rem 1.5rem; border-radius:50px;">Call Now</a>
+        <button class="mobile-menu" onclick="toggleMobileNav()" aria-label="মেনু খুলুন">☰</button>
+        
+        <div class="nav-links">
+            <a href="index.html" onclick="closeNav()">মূল পাতা</a>
+            <a href="#spectrum" onclick="closeNav()">লঙ্কার তীব্রতার মাত্রা</a>
+            <a href="#inventory" onclick="closeNav()">মশলার ভাণ্ডার</a>
+            <a href="about.html" onclick="closeNav()">আমাদের ঐতিহ্য</a>
+            <a href="contact.html" onclick="closeNav()">যোগাযোগ</a>
+            <button onclick="toggleCartDrawer(); closeNav();" class="btn btn-outline" style="padding:0.5rem 1.2rem;">
+                🛒 থলি (<span class="header-cart-count">০</span>)
+            </button>
+            <a href="tel:+919734239509" class="btn btn-primary" style="padding:0.5rem 1.4rem;">সরাসরি কল</a>
+        </div>
+    </div>
+</nav>
+
+<!-- থিম টগল -->
+<div id="theme-toggle" onclick="toggleTheme()" aria-label="লাইট ও ডার্ক মোড পরিবর্তন">🌓</div>
+
+<!-- হিরো সেকশন -->
+<section class="hero">
+    <div class="container hero-grid">
+        <div class="hero-text-col">
+            <div class="badge-pill">✨ ১০০% পাথরের জাঁতায় পেষা • শূন্য ভেজাল</div>
+            <h1>খাঁটি পাথরের জাঁতায় তৈরি মশলা <span>আসল সুবাস ও ঝাঁঝালো স্বাদে</span></h1>
+            <p>বাজারের অধিকাংশ মশলায় কৃত্রিম রঙ ও স্টার্চের ভেজাল মেশানো থাকে। বল্লভ মশলা সনাতন পাথরের জাঁতায় শীতল পদ্ধতিতে পেষা হয়, যা মশলার স্বাভাবিক উদ্বায়ী তেল, উচ্চ কারকিউমিন ও অনন্য ৩-স্তরের লঙ্কার ঝাঁঝ সম্পূর্ণ অক্ষুণ্ণ রাখে।</p>
+            
+            <div class="hero-cta-group">
+                <a href="#inventory" class="btn btn-primary">টাটকা মশলা কিনুন</a>
+                <a href="#spectrum" class="btn btn-gold">লঙ্কার ঝাঁঝ দেখুন</a>
+            </div>
+
+            <div class="hero-features-strip">
+                <div class="strip-item"><span class="strip-icon">✓</span> শীতল পাথরে পেষা</div>
+                <div class="strip-item"><span class="strip-icon">✓</span> উচ্চ কারকিউমিন পরীক্ষিত</div>
+                <div class="strip-item"><span class="strip-icon">✓</span> সমগ্র বাংলায় হোম ডেলিভারি</div>
             </div>
         </div>
-    </nav>
-    <div id="theme-toggle" onclick="document.body.classList.toggle('dark-mode')" aria-label="Toggle Dark Mode">🌓</div>
-    <script>
-        function toggleMenu() { document.querySelector('.nav-links').classList.remove('active'); }
-        if(true) { document.querySelector('#main-navbar').style.top = '40px'; }
-    </script>
-    
-        
-    <section class="modern-hero">
-        <div class="modern-hero-bg"></div>
-        <div class="container modern-hero-grid">
-            <div class="modern-hero-text reveal active">
-                
-                <h1 id="hero-title">Taste the Purest Heat of India..</h1>
-                <p id="hero-sub">No artificial colors. No adulteration. Just premium, stone-ground spices crafted to bring authentic, fiery flavors to your kitchen.</p>
-                <div class="hero-btn-group">
-                    <a href="#inventory" class="btn btn-accent">Explore Now</a>
-                    <a href="contact.html" class="btn btn-outline-light">Contact Us</a>
-                </div>
+
+        <div class="hero-media-wrapper">
+            <div class="hero-image-frame">
+                <img src="https://cdn.shopaccino.com/refresh/articles/shutterstock1503700925-670186_l.jpg?v=681" alt="বল্লভ খাঁটি ভারতীয় মশলা" fetchpriority="high">
             </div>
-            <div class="modern-hero-visual reveal active" style="transition-delay: 0.2s;">
-                <div class="visual-frame">
-                    
-    <div class="carousel-slide active" style="background-image: url('https://cdn.shopaccino.com/refresh/articles/shutterstock1503700925-670186_l.jpg?v=681')" fetchpriority="high"></div>
-    <div class="carousel-slide" style="background-image: url('https://micdp.coops4dev.coop/sites/default/files/styles/max_1440/public/2022-11/Frontier.jpg?itok=3bOzpRb3')" loading="lazy"></div>
-    <div class="carousel-slide" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMsg1j-M4Aj0dh2h7oXkgvJceNlpvroL-Y402z8UShK1vpzQuAiXYG-qrw&s=10')" loading="lazy"></div>
-    <script defer>
-        let slides = document.querySelectorAll('.carousel-slide'); let currentSlide = 0; 
-        setInterval(() => { slides[currentSlide].classList.remove('active'); currentSlide = (currentSlide + 1) % slides.length; slides[currentSlide].classList.add('active'); }, 4000);
-    </script>
-    
-                </div>
-                <div class="floating-element glow-1"></div>
-                <div class="floating-element glow-2"></div>
-            </div>
-        </div>
-    </section>
-    
-    <div class="stats-ribbon-container container reveal">
-        <div class="stats-ribbon">
-            <div class="stat-block">
-                <h3>100%</h3><p>Adulteration Free</p>
-            </div>
-            <div class="stat-divider"></div>
-            <div class="stat-block">
-                <h3>3</h3><p>Exclusive Chilli Blends</p>
-            </div>
-            <div class="stat-divider"></div>
-            <div class="stat-block">
-                <h3>0</h3><p>Artificial Colors</p>
+            <div class="floating-seal">
+                <strong>১০০%</strong>
+                <span>খাঁটি ও ভেজালমুক্ত<br>গ্যারান্টিযুক্ত</span>
             </div>
         </div>
     </div>
-    
-    <section id="features" style="background:var(--bg)">
-        <div class="container">
-            <div class="section-head reveal" style="display:flex; flex-direction:column; align-items:center; text-align:center; margin-bottom:4rem;">
-                <h2 style="margin-bottom:0.5rem; font-size:2.5rem;">Value Pillars</h2>
-                <div style="width:60px; height:4px; background:var(--s); margin:1rem 0; border-radius:2px;"></div>
-            </div>
-            <div class="grid-3">
-                <div class="card reveal" style="padding:0;">
-                    <div class="card-content" style="text-align:left; padding: 2rem;">
-                        <div style="color:var(--s); margin-bottom:1.5rem; background:rgba(0,0,0,0.04); width:50px; height:50px; display:flex; align-items:center; justify-content:center; border-radius:12px;">
-                            <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/></svg>
-                        </div>
-                        <h3 style="font-size:1.3rem; margin-bottom:1rem; color:var(--txt);">100% Adulteration Free</h3>
-                        <p style="opacity:0.8; line-height:1.7; font-size:1rem; color:var(--txt); margin:0; hyphens:none; -webkit-hyphens:none; text-align:left;">We guarantee zero sawdust, brick powder, artificial colors, or chemical preservatives. Pure spice, and nothing else.</p>
-                    </div>
-                </div>
-                <div class="card reveal" style="padding:0;">
-                    <div class="card-content" style="text-align:left; padding: 2rem;">
-                        <div style="color:var(--s); margin-bottom:1.5rem; background:rgba(0,0,0,0.04); width:50px; height:50px; display:flex; align-items:center; justify-content:center; border-radius:12px;">
-                            <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M11 21h-1l1-7H7.5c-.58 0-.57-.32-.38-.66.19-.34.05-.08.07-.12C8.48 10.94 10.42 7.54 13 3h1l-1 7h3.5c.49 0 .56.33.47.51l-.07.15C12.96 17.55 11 21 11 21z"/></svg>
-                        </div>
-                        <h3 style="font-size:1.3rem; margin-bottom:1rem; color:var(--txt);">Stone-Ground Perfection</h3>
-                        <p style="opacity:0.8; line-height:1.7; font-size:1rem; color:var(--txt); margin:0; hyphens:none; -webkit-hyphens:none; text-align:left;">Traditional slow-grinding methods ensure our masalas retain their natural essential oils, deep colors, and rich aromas.</p>
-                    </div>
-                </div>
-                <div class="card reveal" style="padding:0;">
-                    <div class="card-content" style="text-align:left; padding: 2rem;">
-                        <div style="color:var(--s); margin-bottom:1.5rem; background:rgba(0,0,0,0.04); width:50px; height:50px; display:flex; align-items:center; justify-content:center; border-radius:12px;">
-                            <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
-                        </div>
-                        <h3 style="font-size:1.3rem; margin-bottom:1rem; color:var(--txt);">The 3-Tier Chilli Collection</h3>
-                        <p style="opacity:0.8; line-height:1.7; font-size:1rem; color:var(--txt); margin:0; hyphens:none; -webkit-hyphens:none; text-align:left;">From the rich color of our Assam Special to the extreme, fiery heat of our Bullet Chilly, we have your perfect spice level.</p>
-                    </div>
-                </div>
-                <div class="card reveal" style="padding:0;">
-                    <div class="card-content" style="text-align:left; padding: 2rem;">
-                        <div style="color:var(--s); margin-bottom:1.5rem; background:rgba(0,0,0,0.04); width:50px; height:50px; display:flex; align-items:center; justify-content:center; border-radius:12px;">
-                            <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M21 18v1c0 1.1-.9 2-2 2H5c-1.11 0-2-.9-2-2V5c0-1.1.89-2 2-2h14c1.1 0 2 .9 2 2v1h-9c-1.11 0-2 .9-2 2v8c0 1.1.89 2 2 2h9zm-9-2h10V8H12v8zm4-2.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>
-                        </div>
-                        <h3 style="font-size:1.3rem; margin-bottom:1rem; color:var(--txt);">Wholesale Pricing</h3>
-                        <p style="opacity:0.8; line-height:1.7; font-size:1rem; color:var(--txt); margin:0; hyphens:none; -webkit-hyphens:none; text-align:left;">Buy directly from the source. Get premium, restaurant-quality spices delivered at everyday household prices.</p>
-                    </div>
-                </div>
-                <div class="card reveal" style="padding:0;">
-                    <div class="card-content" style="text-align:left; padding: 2rem;">
-                        <div style="color:var(--s); margin-bottom:1.5rem; background:rgba(0,0,0,0.04); width:50px; height:50px; display:flex; align-items:center; justify-content:center; border-radius:12px;">
-                            <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
-                        </div>
-                        <h3 style="font-size:1.3rem; margin-bottom:1rem; color:var(--txt);">Flavor-Sealed Packaging</h3>
-                        <p style="opacity:0.8; line-height:1.7; font-size:1rem; color:var(--txt); margin:0; hyphens:none; -webkit-hyphens:none; text-align:left;">Our airtight, moisture-proof zip-pouches lock in the aroma and keep your spices fresh for up to 12 months.</p>
-                    </div>
-                </div>
-                <div class="card reveal" style="padding:0;">
-                    <div class="card-content" style="text-align:left; padding: 2rem;">
-                        <div style="color:var(--s); margin-bottom:1.5rem; background:rgba(0,0,0,0.04); width:50px; height:50px; display:flex; align-items:center; justify-content:center; border-radius:12px;">
-                            <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
-                        </div>
-                        <h3 style="font-size:1.3rem; margin-bottom:1rem; color:var(--txt);">Instant WhatsApp Ordering</h3>
-                        <p style="opacity:0.8; line-height:1.7; font-size:1rem; color:var(--txt); margin:0; hyphens:none; -webkit-hyphens:none; text-align:left;">No complex logins. Just browse the store, tap to add to cart, and send your order directly to our WhatsApp.</p>
-                    </div>
-                </div></div>
+</section>
+
+<!-- ৩-স্তর লঙ্কার তীব্রতা স্পেকট্রাম -->
+<section id="spectrum" class="heat-spectrum-section">
+    <div class="container">
+        <div class="section-title">
+            <div class="badge-pill" style="margin: 0 auto 1rem auto; display: table;">আমাদের বিশেষ লঙ্কা সংকলন</div>
+            <h2>৩ রকমের আলাদা বৈশিষ্ট্যের লঙ্কা গুঁড়ো</h2>
+            <p>সব রান্নায় একই ঝাল চলে না। আপনার পছন্দমতো বেছে নিন উজ্জ্বল প্রাকৃতিক রঙ কিংবা মনমাতানো তীব্র ঝাঁঝ।</p>
         </div>
-    </section>
-    <section id="inventory" style="background:rgba(0,0,0,0.02)"><div class="container"><div class="section-head reveal"><h2 id="store-title">Store</h2></div><div id="inv-grid" class="grid-3"><div>Loading Edge Data...</div></div></div><button id="voice-btn" onclick="startVoiceSearch()" aria-label="Voice Search">🎤</button></section>
-    
-    <script defer>
-    function parseCSVLine(str) { 
-        const res = []; let cur = ''; let inQuote = false; 
-        for (let i = 0; i < str.length; i++) { 
-            const c = str[i]; 
-            if (c === '"') { if (inQuote && str[i+1] === '"') { cur += '"'; i++; } else { inQuote = !inQuote; } } 
-            else if (c === ',' && !inQuote) { res.push(cur.trim()); cur = ''; } 
-            else { cur += c; } 
-        } 
-        res.push(cur.trim()); return res; 
+
+        <div class="spectrum-grid">
+            <div class="heat-card assam">
+                <div class="flame-indicator">🔥</div>
+                <div class="heat-level-title">আসাম স্পেশাল লঙ্কা</div>
+                <div class="heat-scoville">মৃদু ঝাল • গাঢ় টুকটুকে লাল রঙ</div>
+                <p class="heat-desc">আসামের উৎকৃষ্ট সূর্য-শুকনো লঙ্কা থেকে তৈরি। তরকারিতে আনে অপূর্ব প্রাকৃতিক লাল রঙ এবং মৃদু মিষ্টি সুবাস, যা শিশু ও পরিবারের সকলেই পছন্দ করে।</p>
+            </div>
+
+            <div class="heat-card fotki">
+                <div class="flame-indicator">🔥🔥</div>
+                <div class="heat-level-title">ফটকি তিখা লঙ্কা</div>
+                <div class="heat-scoville">বাঙালিয়ানা ঝাঁঝ • মাঝারি-কড়া ঝাল</div>
+                <p class="heat-desc">খাসির মাংসের কষা, নদীর মাছের ঝোল ও সান্ধ্যকালীন তরকারির জন্য আদর্শ খাঁটি বাঙালিয়ানা ঝাঁঝ। অপূর্ব সুগন্ধ ও জিভে জল আনা স্বাদ।</p>
+            </div>
+
+            <div class="heat-card bullet">
+                <div class="flame-indicator">🔥🔥🔥</div>
+                <div class="heat-level-title">বুলেট চিলি (তীব্র ঝাল)</div>
+                <div class="heat-scoville">অগ্নিতীক্ষ্ণ ঝাল • সর্বোচ্চ স্কোভিল তীব্রতা</div>
+                <p class="heat-desc">যাঁরা চরম ঝাল ভালোবাসেন তাঁদের জন্য বিশেষভাবে প্রস্তুত। খাঁটি, তীব্র ঝাঁঝালো অনুভূতি যা প্রথম গ্রাসেই চমক এনে দেয়। অল্প ব্যবহারেই দারুণ কাজ করে।</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- বৈশিষ্ট্যসমূহ -->
+<section class="features-section">
+    <div class="container">
+        <div class="section-title">
+            <h2>কেন খাদ্যরসিকেরা বল্লভ মশলা বিশ্বাস করেন?</h2>
+            <p>জমির সেরা ফসল থেকে আপনার রান্নার পাত্র পর্যন্ত—আমরা বজায় রাখি খাঁটি পুষ্টি ও অনন্য স্বাদ।</p>
+        </div>
+
+        <div class="grid-3">
+            <div class="pillar-card">
+                <div class="pillar-icon-box">🌿</div>
+                <h3>শূন্য ভেজালের গ্যারান্টি</h3>
+                <p>ইটের গুঁড়ো, কাঠের ভুষি, ক্ষতিকারক লেড ক্রোমেট ও কৃত্রিম রঙের সম্পূর্ণ অনুপস্থিতি নিশ্চিত। প্রতি ব্যাচ মশলা খাদ্যমানের দিক থেকে ১০০% নিরাপদ।</p>
+            </div>
+
+            <div class="pillar-card">
+                <div class="pillar-icon-box">⚙️</div>
+                <h3>সনাতন ধীরগতির পাথরের জাঁতা</h3>
+                <p>দ্রুতগতির বাণিজ্যিক মেশিনের তাপে মশলার স্বাভাবিক সুগন্ধি তেল নষ্ট হয়। আমাদের শীতল জাঁতা মশলার প্রাকৃতিক এসেন্স অক্ষুণ্ণ রাখে।</p>
+            </div>
+
+            <div class="pillar-card">
+                <div class="pillar-icon-box">🛡️</div>
+                <h3>সুগন্ধ-রোধী ফয়েল পাউচ</h3>
+                <p>বহুস্তরীয় ফুড-গ্রেড ময়েশ্চার-ব্যারিয়ার প্যাকেজিং মশলাকে আর্দ্রতা ও হাওয়া থেকে রক্ষা করে এবং ১২ মাস পর্যন্ত তাজা রাখে।</p>
+            </div>
+
+            <div class="pillar-card">
+                <div class="pillar-icon-box">⚡</div>
+                <h3>কারকিউমিন পুষ্টি অক্ষুণ্ণ</h3>
+                <p>আমাদের সালেম ও লাকাডং হলুদ পলিশহীন রাখা হয়, যা রোগ প্রতিরোধ ক্ষমতা বৃদ্ধি ও খাঁটি সোনালী রঙের জন্য প্রয়োজনীয় প্রাকৃতিক কারকিউমিন ধরে রাখে।</p>
+            </div>
+
+            <div class="pillar-card">
+                <div class="pillar-icon-box">💬</div>
+                <h3>সরাসরি হোয়াটসঅ্যাপে অর্ডার</h3>
+                <p>কোনো জটিল পাসওয়ার্ড ছাড়াই পণ্য থলিতে যোগ করুন এবং এক ক্লিকে সরাসরি আমাদের কারখানায় অর্ডার পাঠিয়ে দিন।</p>
+            </div>
+
+            <div class="pillar-card">
+                <div class="pillar-icon-box">🤝</div>
+                <h3>হোটেল ও রেস্তোরাঁয় পাইকারি সরবরাহ</h3>
+                <p>বর্ধমান, হুগলি, কলকাতা সহ পার্শ্ববর্তী জেলার ক্যাটারিং ও রেস্তোরাঁর জন্য পাইকারি সুলভ মূল্যে ৫-২৫ কেজির বস্তা সরবরাহ করা হয়।</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- লাইভ গুগল শিট স্টোর ইনভেন্টরি -->
+<section id="inventory" class="store-section">
+    <div class="container">
+        <div class="section-title">
+            <h2>আমাদের কারিগরী মশলার ভাণ্ডার</h2>
+            <p>সরাসরি আমাদের গুগল শিট লাইভ ইনভেন্টরি থেকে বর্তমান মজুদের তালিকা লোড হচ্ছে।</p>
+        </div>
+
+        <div class="store-controls">
+            <div class="filter-pills">
+                <button class="filter-pill active" onclick="filterCategory('all', this)">সব মশলা</button>
+                <button class="filter-pill" onclick="filterCategory('লঙ্কা', this)">লঙ্কা গুঁড়ো</button>
+                <button class="filter-pill" onclick="filterCategory('হলুদ', this)">হলুদ গুঁড়ো</button>
+                <button class="filter-pill" onclick="filterCategory('জিরে', this)">জিরে ও ধনে</button>
+            </div>
+            <div class="search-input-box">
+                <input type="text" id="spice-search" oninput="searchSpices(this.value)" placeholder="মশলার নাম খুঁজুন...">
+            </div>
+        </div>
+
+        <!-- শুধুমাত্র গুগল শিটের ডাটা এখানে লোড হবে -->
+        <div id="inv-grid" class="grid-3">
+            <div style="grid-column: 1/-1; text-align:center; padding: 3rem; color: var(--gold); font-weight:700;">
+                গুগল শিট থেকে তাজা মশলার তালিকা লোড হচ্ছে...
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- আমাদের ঐতিহ্য টিজার -->
+<section class="about-section">
+    <div class="container">
+        <div class="about-grid">
+            <div class="about-image-stack">
+                <img src="https://micdp.coops4dev.coop/sites/default/files/styles/max_1440/public/2022-11/Frontier.jpg?itok=3bOzpRb3" alt="সনাতন মশলা বাছাই ও রোদ শুকানো" class="about-main-img" loading="lazy">
+            </div>
+            <div>
+                <div class="badge-pill">আমাদের ঐতিহ্য</div>
+                <h2>হারিয়ে যাওয়া সনাতন পাথরে পেষা পদ্ধতির পুনর্জাগরণ</h2>
+                <p>বাজারের প্যাকেটজাত মশলার অতিরিক্ত রাসায়নিক ও ভেজালের ভিড়ে খাঁটি স্বাদের সন্ধান থেকেই বল্লভ মশলার সূচনা।</p>
+                <p>আমরা বর্ধমানের নিমদহে ঐতিহ্যবাহী পাথরের জাঁতায় মশলা তৈরির কাজ শুরু করেছি। কৃষকদের কাছ থেকে খাঁটি বীজ সংগ্রহ, উন্মুক্ত রোদে শুকানো এবং ধীরেসুস্থে পাথরে পেষা—যাতে আপনার রান্না হয় অতুলনীয়।</p>
+                <a href="about.html" class="btn btn-outline" style="margin-top: 1rem;">আমাদের সম্পূর্ণ কার্যপদ্ধতি জানুন →</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ক্রেতাদের অভিমত -->
+<section style="padding: 6rem 0; background: var(--card-bg);">
+    <div class="container">
+        <div class="section-title">
+            <h2>প্রজন্মের পর প্রজন্ম গৃহিণীদের ভালোবাসা</h2>
+            <p>পশ্চিমবঙ্গের বিভিন্ন প্রান্তের সন্তুষ্ট ক্রেতাদের অভিমত।</p>
+        </div>
+
+        <div class="grid-3">
+            <div class="pillar-card">
+                <div style="color: var(--gold); font-size: 1.2rem; margin-bottom: 0.8rem;">★★★★★</div>
+                <p style="font-style: italic; margin-bottom: 1.2rem;">"আসাম স্পেশাল লঙ্কার প্যাকেটটি খুলতেই মিষ্টি গন্ধে ঘর ভরে গেল। কড়া ঝাল ছাড়াই তরকারিতে চমৎকার লাল রঙ এসেছে। আমার বাচ্চারা খুব তৃপ্তি করে খেয়েছে!"</p>
+                <strong>— প্রিয়া শর্মা, কলকাতা</strong>
+            </div>
+
+            <div class="pillar-card">
+                <div style="color: var(--gold); font-size: 1.2rem; margin-bottom: 0.8rem;">★★★★★</div>
+                <p style="font-style: italic; margin-bottom: 1.2rem;">"আমাদের হোটেলের স্পেশাল মাটন কষার জন্য বুলেট চিলি অর্ডার করেছিলাম। সামান্য পরিমাণেই অসাধারণ ঝাঁঝ তৈরি হয়। কোনো রাসায়নিক তিতা ভাব নেই।"</p>
+                <strong>— রাহুল বর্মা, বর্ধমান</strong>
+            </div>
+
+            <div class="pillar-card">
+                <div style="color: var(--gold); font-size: 1.2rem; margin-bottom: 0.8rem;">★★★★★</div>
+                <p style="font-style: italic; margin-bottom: 1.2rem;">"পাথরে পেষা জিরে এবং হলুদের গন্ধ অসাধারণ। বাজারের মশলার চেয়ে অর্ধেকেরও কম লাগে কারণ এতে আসল এসেন্স তেল সম্পূর্ণ অক্ষত রয়েছে।"</p>
+                <strong>— মিসেস দাশগুপ্ত, নদিয়া</strong>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- সচরাচর জিজ্ঞাসিত প্রশ্নাবলি (FAQ) -->
+<section class="faq-section">
+    <div class="section-title">
+        <h2>সচরাচর জিজ্ঞাসিত প্রশ্নাবলি</h2>
+        <p>আমাদের মশলার গুণমান ও অর্ডার সম্পর্কিত প্রয়োজনীয় তথ্য।</p>
+    </div>
+
+    <details>
+        <summary>আপনাদের মশলায় কি কোনো কৃত্রিম রঙ বা কেমিক্যাল মেশানো হয়?</summary>
+        <p>না, সম্পূর্ণ ভেজালমুক্ত। আমরা কোনো সুদান ডাই, ক্ষতিকারক লেড ক্রোমেট বা রাসায়নিক প্রিজারভেটিভ ব্যবহার করি না। আসাম স্পেশাল লঙ্কার লাল রঙ এবং হলুদের সোনালী আভা সম্পূর্ণ প্রাকৃতিকভাবে উৎপন্ন।</p>
+    </details>
+
+    <details>
+        <summary>৩ রকমের লঙ্কার মধ্যে কোনটি আমার কেনা উচিত?</summary>
+        <p><strong>আসাম স্পেশাল:</strong> গাঢ় প্রাকৃতিক লাল রঙ ও চমৎকার মৃদু ঝাল।<br>
+        <strong>ফটকি তিখা:</strong> দৈনন্দিন মাছ-মাংসের ঝোলে খাঁটি বাঙালিয়ানা ঝাঁঝ ও মাঝারি ঝাল।<br>
+        <strong>বুলেট চিলি:</strong> যাঁরা চরম ঝাল ভালোবাসেন তাঁদের জন্য তীব্র স্কোভিল ঝাঁঝালো লঙ্কা।</p>
+    </details>
+
+    <details>
+        <summary>মশলা কতদিন পর্যন্ত তাজা থাকে?</summary>
+        <p>আমাদের এয়ারটাইট ফয়েল জিপলক প্যাকেটে অথবা কাচের বায়ুরোধী বয়ামে মুখ বন্ধ করে সরাসরি রোদ থেকে দূরে রাখলে ১২ মাস পর্যন্ত মশলার আসল সুবাস ও ঝাঁঝ বজায় থাকে।</p>
+    </details>
+
+    <details>
+        <summary>হোয়াটসঅ্যাপে ১-ক্লিক অর্ডার কীভাবে কাজ করে?</summary>
+        <p>পছন্দের মশলাগুলোর পাশে '+ থলিতে যোগ' বোতামে চাপ দিন। এরপর থলি খুলে 'হোয়াটসঅ্যাপে অর্ডার পাঠান' ক্লিক করলেই পণ্যের নাম ও মূল্যের তালিকা সহ স্বয়ংক্রিয়ভাবে আমাদের কারখানায় সরাসরি বার্তা চলে যাবে।</p>
+    </details>
+
+    <details>
+        <summary>ক্যাটারার ও রেস্তোরাঁর জন্য কি পাইকারি মূল্যের সুবিধা রয়েছে?</summary>
+        <p>হ্যাঁ! আমরা ক্যাটারার, রেস্তোরাঁ ও পাইকারি ক্রেতাদের জন্য ৫ কেজি, ১০ কেজি এবং ২৫ কেজির বাল্ক বস্তা বিশেষ ছাড়ে সরবরাহ করে থাকি। আমাদের সাথে যোগাযোগ করুন বা ফোন করুন +৯১ ৯৭৩৪২৩৯৫০৯ নম্বরে।</p>
+    </details>
+</section>
+
+<!-- ফুটার -->
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div>
+                <h3 style="color:var(--gold); font-family:var(--font-display); font-size:1.6rem; margin-bottom:1rem;">বল্লভ মশলা</h3>
+                <p style="color:#a8a29e; font-size:0.95rem; margin-bottom:1.5rem; max-width: 320px;">
+                    ঐতিহ্যবাহী সনাতন পাথরের জাঁতায় পেষা খাঁটি মশলার নির্ভরযোগ্য প্রতিষ্ঠান। ফসল থেকে সরাসরি খাঁটি স্বাদ।
+                </p>
+                <div style="font-size:0.95rem; line-height: 1.8;">
+                    <p>📍 <strong>কারখানা:</strong> নিমদহ কালী বাড়ি, বর্ধমান, পশ্চিমবঙ্গ ৭১৩৫১২</p>
+                    <p>📞 <strong>ফোন:</strong> +৯১ ৯৭৩৪২৩৯৫০৯</p>
+                    <p>✉️ <strong>ইমেইল:</strong> manikbiswas9122@gmail.com</p>
+                </div>
+                <div class="social-links">
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="ফেসবুক"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="ইনস্টাগ্রাম"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+                    <a href="https://wa.me/919734239509" target="_blank" rel="noopener noreferrer" aria-label="হোয়াটসঅ্যাপ"><svg viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91c0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2"/></svg></a>
+                </div>
+            </div>
+
+            <div>
+                <h4>প্রয়োজনীয় লিংক</h4>
+                <a href="index.html">মূল পাতা</a>
+                <a href="#inventory">মশলার ভাণ্ডার</a>
+                <a href="#spectrum">লঙ্কার তীব্রতার মাত্রা</a>
+                <a href="about.html">আমাদের ঐতিহ্য</a>
+                <a href="contact.html">যোগাযোগ</a>
+            </div>
+
+            <div>
+                <h4>ডেলিভারি অঞ্চল</h4>
+                <p style="font-size:0.95rem; line-height:1.7; color:#a8a29e;">
+                    বর্ধমান, নদিয়া, হুগলি, বীরভূম, মুর্শিদাবাদ, কলকাতা, হাওড়া, উত্তর ও দক্ষিণ ২৪ পরগনা সহ সমগ্র ভারতে কুরিয়ার সরবরাহ।
+                </p>
+            </div>
+
+            <div>
+                <h4>নিরাপত্তা ও নীতি</h4>
+                <a href="privacy.html">গোপনীয়তা নীতি</a>
+                <a href="terms.html">ব্যবহারের শর্তাবলি</a>
+                <div style="margin-top:1.5rem; background:rgba(255,255,255,0.05); padding:1rem; border-radius:10px;">
+                    <span style="display:block; font-size:0.8rem; text-transform:uppercase; color:var(--gold); font-weight:700;">জিরো-ডাটাবেস সুরক্ষা</span>
+                    <span style="font-size:0.85rem; color:#d6d3d1;">আপনার অর্ডার সরাসরি এনক্রিপ্ট হয়ে হোয়াটসঅ্যাপে প্রেরিত হয়।</span>
+                </div>
+            </div>
+        </div>
+
+        <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1.5rem; text-align: center; font-size: 0.9rem; color: #78716c;">
+            &copy; ২০২৬ বল্লভ মশলা। সর্বস্বত্ব সংরক্ষিত। ১০০% খাঁটি ভারতীয় মশলা।
+        </div>
+    </div>
+</footer>
+
+<!-- কার্ট ট্রিগার ও ড্রয়ার -->
+<div id="cart-trigger-btn" onclick="toggleCartDrawer()">
+    🛒 থলি দেখুন (<span class="header-cart-count">০</span>)
+</div>
+
+<div id="cart-drawer-overlay" onclick="toggleCartDrawer()"></div>
+
+<div id="cart-drawer">
+    <div class="cart-header">
+        <h3 style="font-size: 1.4rem;">আপনার মশলার থলি</h3>
+        <button onclick="toggleCartDrawer()" style="background:none; border:none; font-size:1.6rem; cursor:pointer; color:var(--text-heading);">&times;</button>
+    </div>
+
+    <div class="cart-items-container" id="cart-items-target">
+        <!-- ডায়নামিক কার্ট আইটেম -->
+    </div>
+
+    <div class="cart-footer">
+        <div class="cart-total-row">
+            <span>মোট:</span>
+            <span id="cart-total-price">₹০.০০</span>
+        </div>
+
+        <div style="margin-bottom: 1.2rem;">
+            <input type="text" id="cust-name" placeholder="আপনার নাম" style="width:100%; padding:0.8rem 1rem; border-radius:8px; border:1px solid var(--border-color); background:var(--bg); color:var(--text-heading); margin-bottom:8px; font-family:inherit;">
+            <input type="text" id="cust-address" placeholder="ডেলিভারির সম্পূর্ণ ঠিকানা ও ল্যান্ডমার্ক" style="width:100%; padding:0.8rem 1rem; border-radius:8px; border:1px solid var(--border-color); background:var(--bg); color:var(--text-heading); font-family:inherit;">
+        </div>
+
+        <button onclick="dispatchWhatsAppOrder()" class="btn btn-primary" style="width: 100%; padding: 1rem;">
+            💬 ১-ক্লিকে হোয়াটসঅ্যাপে অর্ডার পাঠান
+        </button>
+    </div>
+</div>
+
+<!-- টোস্ট নোটিফিকেশন -->
+<div id="toast-notification">
+    <span id="toast-msg">পণ্যটি থলিতে যোগ হয়েছে!</span>
+</div>
+
+<!-- হোয়াটসঅ্যাপ ভাসমান বোতাম -->
+<a href="https://wa.me/919734239509?text=নমস্কার%20বল্লভ%20মশলা,%20আমি%20মশলা%20সম্পর্কে%20জানতে%20চাই।" target="_blank" rel="noopener noreferrer" id="wa-widget" aria-label="সরাসরি হোয়াটসঅ্যাপ চ্যাট">
+    <svg viewBox="0 0 24 24" fill="white" width="30" height="30"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91c0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23c-1.48 0-2.93-.39-4.19-1.15l-.3-.17l-3.12.82l.83-3.04l-.2-.32a8.188 8.188 0 0 1-1.26-4.38c.01-4.54 3.7-8.24 8.25-8.24m-3.53 3.16c-.13 0-.35.05-.54.26c-.19.2-.72.7-.72 1.72s.73 2.01.83 2.14c.1.13 1.44 2.19 3.48 3.07c.49.21.87.33 1.16.43c.49.16.94.13 1.29.08c.4-.06 1.21-.5 1.38-.98c.17-.48.17-.89.12-.98c-.05-.09-.18-.13-.37-.23c-.19-.1-.1.13-.1.13s-1.13-.56-1.32-.66c-.19-.1-.32-.15-.45.05c-.13.2-.51.65-.62.78c-.11.13-.23.15-.42.05c-.19-.1-.8-.3-1.53-.94c-.57-.5-1.02-1.12-1.21-1.45c-.11-.19-.01-.29.09-.38c.09-.08.19-.23.29-.34c.1-.11.13-.19.19-.32c.06-.13.03-.24-.01-.34c-.05-.1-.45-1.08-.62-1.48c-.16-.4-.36-.34-.51-.35c-.11-.01-.25-.01-.4-.01Z"/></svg>
+</a>
+
+<!-- ক্লায়েন্ট লজিক এবং গুগল শিট ইন্টিগ্রেশন -->
+<script>
+// থিম পরিবর্তন
+function toggleTheme() {
+    document.body.classList.toggle('dark-mode');
+    localStorage.setItem('bm_theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
+}
+if (localStorage.getItem('bm_theme') === 'dark') document.body.classList.add('dark-mode');
+
+// ন্যাভবার ড্রয়ার
+function toggleMobileNav() {
+    document.querySelector('.nav-links').classList.toggle('active');
+}
+function closeNav() {
+    document.querySelector('.nav-links').classList.remove('active');
+}
+
+// টোস্ট নোটিফিকেশন
+function showToast(msg) {
+    const t = document.getElementById('toast-notification');
+    document.getElementById('toast-msg').innerText = msg;
+    t.classList.add('show');
+    setTimeout(() => t.classList.remove('show'), 2600);
+}
+
+// নিখুঁত CSV পার্সার
+function parseCSVLine(str) { 
+    const res = []; let cur = ''; let inQuote = false; 
+    for (let i = 0; i < str.length; i++) { 
+        const c = str[i]; 
+        if (c === '"') { 
+            if (inQuote && str[i+1] === '"') { cur += '"'; i++; } 
+            else { inQuote = !inQuote; } 
+        } else if (c === ',' && !inQuote) { 
+            res.push(cur.trim()); cur = ''; 
+        } else { cur += c; } 
     } 
-    
-    function parseMarkdown(text) { 
-        if (!text) return '';
-        // Fix the literal \n string by splitting and joining with <br>
-        let clean = text.split('\\n').join('<br>').split('\n').join('<br>');
+    res.push(cur.trim()); return res; 
+}
+
+// শুধুমাত্র গুগল শিট থেকে লাইভ প্রোডাক্ট লোড (কোনো ডামি বা ফলব্যাক ছাড়া)
+let allProducts = [];
+const CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTs32OYdkg_YQUk4zAR_VmMn0BxJHgVYHgfZnFiK0L1PT0w16pW9VhtHRSp9bKUGnkfm2U4kof_iMGm/pub?output=csv';
+
+async function fetchInventory() {
+    const grid = document.getElementById('inv-grid');
+    try {
+        const res = await fetch(`${CSV_URL}&_nocache=${Date.now()}`);
+        if (!res.ok) throw new Error('গুগল শিট থেকে ডাটা আনা সম্ভব হয়নি');
+        const txt = await res.text();
+        const lines = txt.split(/\r\n|\n/);
+        allProducts = [];
         
-        // Handle Bold
-        let parts = clean.split('**');
-        for (let i = 1; i < parts.length; i += 2) {
-            parts[i] = '<strong>' + parts[i] + '</strong>';
+        for (let i = 1; i < lines.length; i++) {
+            if (!lines[i].trim()) continue;
+            const c = parseCSVLine(lines[i]);
+            if (c.length >= 2 && c[0]) {
+                let imgs = c[3] ? c[3].split('|').map(u => u.trim()) : [];
+                allProducts.push({
+                    name: c[0],
+                    price: c[1],
+                    desc: c[2] || 'খাঁটি সনাতন পদ্ধতিতে তৈরি বল্লভ মশলা।',
+                    img: imgs[0] || 'https://cdn.shopaccino.com/refresh/articles/shutterstock1503700925-670186_l.jpg?v=681'
+                });
+            }
         }
-        let bolded = parts.join('');
         
-        // Handle Bullets and Paragraphs
-        return bolded.split('<br>').map(line => {
-            let t = line.trim();
-            if (t.startsWith('* ')) {
-                return '<li style="margin-left:20px; list-style-type:disc; margin-bottom:8px;">' + t.substring(2) + '</li>';
-            }
-            return t ? '<p style="margin-bottom:15px;">' + t + '</p>' : '';
-        }).join('');
+        if (allProducts.length === 0) {
+            grid.innerHTML = `<div style="grid-column: 1/-1; text-align:center; padding:3rem; color:var(--primary); font-size:1.1rem;">আপনার গুগল শিটে বর্তমানে কোনো প্রোডাক্ট পাওয়া যায়নি।</div>`;
+            return;
+        }
+
+        renderProducts(allProducts);
+    } catch(e) {
+        console.error("গুগল শিট লোডিং ত্রুটি:", e);
+        if (grid) {
+            grid.innerHTML = `<div style="grid-column: 1/-1; text-align:center; padding:3rem; color:#dc2626;">গুগল শিট সংযোগে সমস্যা হয়েছে। নিশ্চিত করুন যে আপনার গুগল স্প্রেডশিটটি ওয়েবে প্রকাশিত (Publish to web) রয়েছে।</div>`;
+        }
     }
-    </script>
-    
-    <script defer>
-    const isDemo = false;
-    async function loadInv() {
-        if (!'https://docs.google.com/spreadsheets/d/e/2PACX-1vTs32OYdkg_YQUk4zAR_VmMn0BxJHgVYHgfZnFiK0L1PT0w16pW9VhtHRSp9bKUGnkfm2U4kof_iMGm/pub?output=csv') return; // LIGHTHOUSE FIX: Abort if no CSV provided
-        try {
-            const res = await fetch('https://docs.google.com/spreadsheets/d/e/2PACX-1vTs32OYdkg_YQUk4zAR_VmMn0BxJHgVYHgfZnFiK0L1PT0w16pW9VhtHRSp9bKUGnkfm2U4kof_iMGm/pub?output=csv'); 
-            const txt = await res.text(); 
-            const lines = txt.split(/\r\n|\n/);
-            const box = document.getElementById('inv-grid'); 
-            if(!box) return; 
-            box.innerHTML = '';
-            for(let i=1; i<lines.length; i++) {
-                if(!lines[i].trim()) continue;
-                const c = parseCSVLine(lines[i]);
-                let allImgs = c[3] ? c[3].split('|') : []; 
-                let mainImg = allImgs.length > 0 ? allImgs[0] : 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800';
-                if(c.length > 1) {
-                    const pName = encodeURIComponent(c[0]);
-                    box.innerHTML += `
-                        <div class="card reveal">
-                            <img src="${mainImg}" class="prod-img" width="300" height="250" loading="lazy" alt="${c[0]}">
-                            <div class="card-body">
-                                <h3>${c[0]}</h3>
-                                <p style="font-weight:bold; color:#059669; margin-bottom:10px;">${c[1]}</p>
-                                <p class="card-desc">${c[2]}</p>
-                                <div style="margin-top:auto; display:grid; grid-template-columns:1fr 1fr; gap:10px; padding-top:15px;">
-                                    <button onclick="addToCart('${c[0]}', '${c[1]}')" class="btn btn-primary" style="padding:0.6rem; font-size:0.75rem; letter-spacing:1px;">ADD</button>
-                                    <a href="product.html?item=${pName}" class="btn btn-accent" style="padding:0.6rem; font-size:0.75rem; letter-spacing:1px; text-decoration:none; display:flex; align-items:center; justify-content:center;">DETAILS</a>
-                                </div>
-                            </div>
-                        </div>`;
-                }
-            }
-        } catch(e) { console.log(e); }
+}
+
+function renderProducts(list) {
+    const grid = document.getElementById('inv-grid');
+    if (!grid) return;
+    if (list.length === 0) {
+        grid.innerHTML = `<div style="grid-column: 1/-1; text-align:center; padding:3rem; color:var(--text-body);">অনুসন্ধান অনুযায়ী কোনো মশলা পাওয়া যায়নি।</div>`;
+        return;
     }
-    if(document.getElementById('inv-grid')) window.addEventListener('load', loadInv);
-    </script>
-    
-    <section id="about" class="modern-about">
-        <div class="container">
-            <div class="about-grid">
-                <div class="about-visual reveal">
-                    <img src="https://micdp.coops4dev.coop/sites/default/files/styles/max_1440/public/2022-11/Frontier.jpg?itok=3bOzpRb3" width="600" height="500" loading="lazy" alt="About Us" class="about-main-img">
-                    <div class="about-experience-badge">
-                        <strong>100%</strong>
-                        <span>Client<br>Satisfaction</span>
-                    </div>
-                </div>
-                <div class="about-text reveal" style="transition-delay:0.2s;">
-                    <h2 id="about-title">The Secret to Authentic Indian Cooking.</h2>
-                    <div class="about-lead"><p style='margin-bottom:1rem; opacity:0.9; color:inherit;'>Ballab Masala was born from a simple promise: bringing 100% pure, unadulterated, and powerfully aromatic spices back to the modern kitchen.</p></div>
-                    <div style="margin-top:2rem;"><a href="about.html" class="btn btn-primary">Read Our Story →</a></div>
+    grid.innerHTML = list.map(p => `
+        <div class="product-card">
+            <div class="product-img-box">
+                <span class="purity-tag">পাথরে পেষা</span>
+                <img src="${p.img}" alt="${p.name}" loading="lazy">
+            </div>
+            <div class="product-body">
+                <h3 class="product-title">${p.name}</h3>
+                <div class="product-price">${p.price}</div>
+                <p class="product-desc">${p.desc}</p>
+                <div class="product-actions">
+                    <button onclick="addToCart('${p.name.replace(/'/g, "\\'")}', '${p.price}')" class="btn btn-primary" style="padding:0.6rem 0.8rem; font-size:0.88rem;">
+                        + থলিতে যোগ
+                    </button>
+                    <a href="product.html?item=${encodeURIComponent(p.name)}" class="btn btn-outline" style="padding:0.6rem 0.8rem; font-size:0.88rem;">
+                        বিস্তারিত
+                    </a>
                 </div>
             </div>
         </div>
-    </section>
-    <section id="testimonials" style="background:rgba(128,128,128,0.02)"><div class="container"><div class="section-head reveal"><h2>Client Stories</h2></div><div class="grid-3"><div class="card reveal" style="padding: clamp(1.5rem, 5vw, 2.5rem); display: flex; flex-direction: column; height: 100%; text-align: left;">
-                <div style="margin-bottom: 1.5rem;">
-                    <svg viewBox="0 0 24 24" width="28" height="28" fill="var(--p)" style="opacity: 0.4;"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
-                </div>
-                <p style="font-size: 1.1rem; font-style: italic; line-height: 1.7; opacity: 0.9; flex-grow: 1; margin-bottom: 2rem;">"The aroma of the Cumin powder is incredible. You can immediately tell it is stone-ground. It completely changed the flavor of my dal tadka."</p>
-                <div style="display: flex; align-items: center; gap: 15px; border-top: 1px solid rgba(128,128,128,0.1); padding-top: 1.5rem;">
-                    <div style="width: 45px; height: 45px; min-width: 45px; border-radius: 50%; background: var(--p); color: #fff; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2rem; text-transform: uppercase;">
-                        P
-                    </div>
-                    <div>
-                        <b style="color: var(--txt-h); font-size: 1.1rem; display: block;">Priya Sharma</b>
-                        <span style="display: block; font-size: 0.8rem; opacity: 0.6; margin-top: 2px;">Verified Client</span>
-                    </div>
-                </div>
-            </div><div class="card reveal" style="padding: clamp(1.5rem, 5vw, 2.5rem); display: flex; flex-direction: column; height: 100%; text-align: left;">
-                <div style="margin-bottom: 1.5rem;">
-                    <svg viewBox="0 0 24 24" width="28" height="28" fill="var(--p)" style="opacity: 0.4;"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
-                </div>
-                <p style="font-size: 1.1rem; font-style: italic; line-height: 1.7; opacity: 0.9; flex-grow: 1; margin-bottom: 2rem;">"I am a spice lover, and the 'Bullet Chilly' is no joke! It delivers the perfect fiery kick without any chemical aftertaste. Authentic and powerful."</p>
-                <div style="display: flex; align-items: center; gap: 15px; border-top: 1px solid rgba(128,128,128,0.1); padding-top: 1.5rem;">
-                    <div style="width: 45px; height: 45px; min-width: 45px; border-radius: 50%; background: var(--p); color: #fff; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2rem; text-transform: uppercase;">
-                        R
-                    </div>
-                    <div>
-                        <b style="color: var(--txt-h); font-size: 1.1rem; display: block;">Rahul Verma</b>
-                        <span style="display: block; font-size: 0.8rem; opacity: 0.6; margin-top: 2px;">Verified Client</span>
-                    </div>
-                </div>
-            </div><div class="card reveal" style="padding: clamp(1.5rem, 5vw, 2.5rem); display: flex; flex-direction: column; height: 100%; text-align: left;">
-                <div style="margin-bottom: 1.5rem;">
-                    <svg viewBox="0 0 24 24" width="28" height="28" fill="var(--p)" style="opacity: 0.4;"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
-                </div>
-                <p style="font-size: 1.1rem; font-style: italic; line-height: 1.7; opacity: 0.9; flex-grow: 1; margin-bottom: 2rem;">"Finally, a brand I can trust. The Assam Special gives my curries a beautiful, rich red restaurant-style color without making it too spicy for my kids."</p>
-                <div style="display: flex; align-items: center; gap: 15px; border-top: 1px solid rgba(128,128,128,0.1); padding-top: 1.5rem;">
-                    <div style="width: 45px; height: 45px; min-width: 45px; border-radius: 50%; background: var(--p); color: #fff; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2rem; text-transform: uppercase;">
-                        M
-                    </div>
-                    <div>
-                        <b style="color: var(--txt-h); font-size: 1.1rem; display: block;">Mrs. Dasgupta</b>
-                        <span style="display: block; font-size: 0.8rem; opacity: 0.6; margin-top: 2px;">Verified Client</span>
-                    </div>
-                </div>
-            </div></div></div></section><section id="faq"><div class="container" style="max-width:800px;"><div class="section-head reveal"><h2 id="faq-title">Frequently Asked Questions</h2></div><details class='reveal'><summary>Are your spices free from artificial colors?</summary><p> </p></details><details class='reveal'><summary>What is the difference between the 3 Chilli Powders?</summary><p> </p></details><details class='reveal'><summary>How long do the spices stay fresh?</summary><p> </p></details><details class='reveal'><summary>How do I place an order?</summary><p> </p></details><details class='reveal'><summary>Do you offer wholesale pricing for restaurants?</summary><p> </p></details></div></section>
-        
-    <footer><div class="container"><div class="footer-grid">
-    <div>
-        <h3 style="color:white; margin-bottom:1.5rem;">Ballab Masala</h3>
-        <p style="color:rgba(255,255,255,0.7); opacity:1;">Nimdaha Kali Bari, Nimdaha, Burdwan 713512</p>
-        <div style="margin-top:1.5rem;"><a href="www.facebook.com" target="_blank" rel="noopener noreferrer" style="display:inline-block; margin-right:15px;" aria-label="Facebook"><svg class="social-icon" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a><a href="www.instagram.com" target="_blank" rel="noopener noreferrer" style="display:inline-block; margin-right:15px;" aria-label="Instagram"><svg class="social-icon" viewBox="0 0 24 24"><path d="M16.98 0a6.9 6.9 0 0 1 5.08 1.98A6.94 6.94 0 0 1 24 7.02v9.96c0 2.08-.68 3.87-1.98 5.13A7.14 7.14 0 0 1 16.94 24H7.06a7.06 7.06 0 0 1-5.03-1.89A6.96 6.96 0 0 1 0 16.94V7.02C0 2.8 2.8 0 7.02 0h9.96zM7.17 2.1c-1.4 0-2.6.48-3.46 1.33c-.85.85-1.33 2.06-1.33 3.46v10.3c0 1.3.47 2.5 1.33 3.36c.86.85 2.06 1.33 3.46 1.33h9.66c1.4 0 2.6-.48 3.46-1.33c.85-.85 1.33-2.06 1.33-3.46V6.89c0-1.4-.47-2.6-1.33-3.46c-.86-.85-2.06-1.33-3.46-1.33H7.17zm11.97 3.33c.77 0 1.4.63 1.4 1.4c0 .77-.63 1.4-1.4 1.4c-.77 0-1.4-.63-1.4-1.4c0-.77.63-1.4 1.4-1.4zM12 5.76c3.39 0 6.14 2.75 6.14 6.14c0 3.39-2.75 6.14-6.14 6.14c-3.39 0-6.14-2.75-6.14-6.14c0-3.39 2.75-6.14 6.14-6.14zm0 2.1c-2.2 0-3.99 1.79-3.99 4.04c0 2.25 1.79 4.04 3.99 4.04c2.2 0 3.99-1.79 3.99-4.04c0-2.25-1.79-4.04-3.99-4.04c0-2.25-1.79-4.04-3.99-4.04c0-2.25-1.79-4.04-3.99-4.04c0-2.25-1.79-4.04-3.99-4.04z"/></svg></a><a href="www.twitter.com" target="_blank" rel="noopener noreferrer" style="display:inline-block; margin-right:15px;" aria-label="X"><svg class="social-icon" viewBox="0 0 24 24"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584l-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"></path></svg></a><a href="www.linkedin.com" target="_blank" rel="noopener noreferrer" style="display:inline-block; margin-right:15px;" aria-label="LinkedIn"><svg class="social-icon" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2a2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2zM4 2a2 2 0 1 1-2 2a2 2 0 0 1 2-2z"></path></svg></a><a href="www.youtube.com" target="_blank" rel="noopener noreferrer" style="display:inline-block; margin-right:15px;" aria-label="YouTube"><svg class="social-icon" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.5 12 3.5 12 3.5s-7.505 0-9.377.55a3.016 3.016 0 0 0-2.122 2.136C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.55 9.376.55 9.376.55s7.505 0 9.377-.55a3.016 3.016 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a></div>
-        
-    <div style="margin-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1rem;">
-        <span style="color: #ffffff !important; font-weight: 800; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 2px; display: block; margin-bottom: 5px;">Service Area</span>
-        <span style="color: rgba(255,255,255,0.85) !important; font-size: 0.95rem; line-height: 1.5; display: block;">Burdwan, Nadia, Hooghly, Birbhum, Murshidabad, Kolkata, Howrah, North 24 Parganas and South 24 Parganas</span>
-    </div>
-    
-    </div>
-    <div>
-        <h4 style="color:white; text-transform:uppercase;">Links</h4>
-        <a href="index.html" style="color:white!important; display:block; margin-bottom:0.5rem;">Home</a>
-        <a href="about.html" style="color:white!important; display:block; margin-bottom:0.5rem;">About</a>
-        
-        
-    </div>
-    <div>
-        <h4 style="color:white; text-transform:uppercase;">Legal</h4>
-        <a href="privacy.html" style="color:white!important; display:block; margin-bottom:0.5rem;">Privacy</a>
-        <a href="terms.html" style="color:white!important; display:block; margin-bottom:0.5rem;">Terms</a>
-    </div>
-    </div><div style="border-top:1px solid rgba(255,255,255,0.1); margin-top:3rem; padding-top:2rem; text-align:center; color:rgba(255,255,255,0.5);">&copy; 2026 Ballab Masala. Powered by Titan Engine.</div></div></footer>
-    
-        
-    <a href="https://wa.me/919734239509" target="_blank" rel="noopener noreferrer" id="wa-widget" aria-label="Chat on WhatsApp">
-        <svg viewBox="0 0 24 24" fill="white" width="32" height="32"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91c0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23c-1.48 0-2.93-.39-4.19-1.15l-.3-.17l-3.12.82l.83-3.04l-.2-.32a8.188 8.188 0 0 1-1.26-4.38c.01-4.54 3.7-8.24 8.25-8.24m-3.53 3.16c-.13 0-.35.05-.54.26c-.19.2-.72.7-.72 1.72s.73 2.01.83 2.14c.1.13 1.44 2.19 3.48 3.07c.49.21.87.33 1.16.43c.49.16.94.13 1.29.08c.4-.06 1.21-.5 1.38-.98c.17-.48.17-.89.12-.98c-.05-.09-.18-.13-.37-.23c-.19-.1-.1.13-.1.13s-1.13-.56-1.32-.66c-.19-.1-.32-.15-.45.05c-.13.2-.51.65-.62.78c-.11.13-.23.15-.42.05c-.19-.1-.8-.3-1.53-.94c-.57-.5-1.02-1.12-1.21-1.45c-.11-.19-.01-.29.09-.38c.09-.08.19-.23.29-.34c.1-.11.13-.19.19-.32c.06-.13.03-.24-.01-.34c-.05-.1-.45-1.08-.62-1.48c-.16-.4-.36-.34-.51-.35c-.11-.01-.25-.01-.4-.01Z"/></path></svg>
-    </a>
-    <style>
-        #wa-widget { position: fixed; bottom: 30px; right: 30px; background: #25D366; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(0,0,0,0.3); z-index: 999; transition: transform 0.3s; }
-        #wa-widget:hover { transform: scale(1.1); }
-    </style>
-    
-        
-    <div id="cart-float" onclick="toggleCart()" style="display:none;" aria-label="Cart">🛒 <span id="cart-count">0</span></div>
-    <div id="cart-overlay" onclick="toggleCart()"></div>
-    <div id="cart-modal">
-        <h3>Your Cart</h3><div id="cart-items" style="max-height:200px; overflow-y:auto; margin:1rem 0;"></div>
-        <div style="font-weight:bold; font-size:1.2rem; margin-bottom:1rem; text-align:right;">Total: <span id="cart-total">0.00</span></div>
-        <div class="local-vault">
-            <h4 style="font-size:0.9rem;">🔒 Fast Checkout Vault</h4>
-            <input type="text" id="vault-name" placeholder="Full Name">
-            <input type="text" id="vault-address" placeholder="Delivery Address">
-        </div>
-        <button onclick="checkoutWhatsApp()" class="btn btn-accent" style="width:100%; margin-top:1rem;">1-Click Checkout via WhatsApp</button>
-    </div>
-    <script defer>
-    let cart = JSON.parse(localStorage.getItem('titanCart')) || [];
-    document.getElementById('vault-name').value = localStorage.getItem('t_name') || ''; document.getElementById('vault-address').value = localStorage.getItem('t_addr') || '';
-    
-    function renderCart() {
-        const box = document.getElementById('cart-items'); if(!box) return; box.innerHTML = ''; let total = 0;
-        cart.forEach((item, i) => { 
-            total += parseFloat(item.price.replace(/[^0-9.]/g, '')) || 0; 
-            box.innerHTML += `<div class="cart-item"><span>${item.name}</span><span>${item.price} <span onclick="remItem(${i})" style="color:red;cursor:pointer;">x</span></span></div>`; 
-        });
-        document.getElementById('cart-count').innerText = cart.length; 
-        document.getElementById('cart-total').innerText = total.toFixed(2);
-        document.getElementById('cart-float').style.display = cart.length > 0 ? 'flex' : 'none';
-        localStorage.setItem('titanCart', JSON.stringify(cart));
+    `).join('');
+}
+
+function filterCategory(cat, btn) {
+    document.querySelectorAll('.filter-pill').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    if (cat === 'all') {
+        renderProducts(allProducts);
+    } else {
+        const filtered = allProducts.filter(p => p.name.includes(cat) || p.desc.includes(cat));
+        renderProducts(filtered);
     }
+}
+
+function searchSpices(term) {
+    const q = term.toLowerCase().trim();
+    const matches = allProducts.filter(p => 
+        p.name.toLowerCase().includes(q) || p.desc.toLowerCase().includes(q)
+    );
+    renderProducts(matches);
+}
+
+// কার্ট সিস্টেম
+let cart = JSON.parse(localStorage.getItem('bm_cart')) || [];
+
+function updateCartUI() {
+    const totalItems = cart.reduce((acc, item) => acc + item.qty, 0);
+    document.querySelectorAll('.header-cart-count').forEach(el => el.innerText = totalItems);
     
-    function addToCart(name, price) { cart.push({name, price}); renderCart(); alert(name + " added!"); }
-    function remItem(i) { cart.splice(i,1); renderCart(); }
-    function toggleCart() { const m = document.getElementById('cart-modal'); m.style.display = m.style.display === 'block' ? 'none' : 'block'; document.getElementById('cart-overlay').style.display = m.style.display; }
-    
-    function checkoutWhatsApp() {
-        const n = document.getElementById('vault-name').value; const a = document.getElementById('vault-address').value;
-        localStorage.setItem('t_name', n); localStorage.setItem('t_addr', a);
-        let msg = "New Order:%0A"; let total = 0;
-        cart.forEach(i => { msg += `- ${i.name} (${i.price})%0A`; total += parseFloat(i.price.replace(/[^0-9.]/g,'')) || 0; });
-        msg += `%0ATotal: ${total.toFixed(2)}%0A`; 
-        if(n) msg += `%0ADeliver to: ${n}, ${a}`;
-        msg += '%0A(Variant: ' + localStorage.getItem('titan_ab') + ')';
-        msg += `%0A%0AUPI: upi@9734239509 | PayPal: https://paypal.me/yourid`;
-        
-        // LIGHTHOUSE FIX (With proper Python f-string escaping)
-        window.open(`https://wa.me/919734239509?text=${msg}`, '_blank', 'noopener,noreferrer');
-        
-        cart = []; renderCart(); toggleCart();
+    const floatBtn = document.getElementById('cart-trigger-btn');
+    if (floatBtn) floatBtn.style.display = totalItems > 0 ? 'inline-flex' : 'none';
+
+    const container = document.getElementById('cart-items-target');
+    const totalPriceEl = document.getElementById('cart-total-price');
+
+    if (container) {
+        if (cart.length === 0) {
+            container.innerHTML = `<div style="text-align:center; padding: 3rem 0; opacity:0.6;">আপনার মশলার থলি খালি রয়েছে।</div>`;
+            if (totalPriceEl) totalPriceEl.innerText = "₹০.০০";
+        } else {
+            let total = 0;
+            container.innerHTML = cart.map((item, idx) => {
+                const numericPrice = parseFloat(item.price.replace(/[^0-9.]/g, '')) || 0;
+                total += numericPrice * item.qty;
+                return `
+                    <div class="cart-drawer-item">
+                        <div>
+                            <strong style="display:block; font-size:1rem; color:var(--text-heading);">${item.name}</strong>
+                            <span style="font-size:0.9rem; color:var(--primary); font-weight:700;">${item.price}</span>
+                        </div>
+                        <div class="item-controls">
+                            <button class="item-btn" onclick="changeQty(${idx}, -1)">−</button>
+                            <span style="font-weight:700; font-size:0.95rem;">${item.qty}</span>
+                            <button class="item-btn" onclick="changeQty(${idx}, 1)">+</button>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+            if (totalPriceEl) totalPriceEl.innerText = "₹" + total.toFixed(2);
+        }
     }
-    window.addEventListener('load', renderCart);
-    </script>
+    localStorage.setItem('bm_cart', JSON.stringify(cart));
+}
+
+function addToCart(name, price) {
+    const found = cart.find(i => i.name === name);
+    if (found) {
+        found.qty++;
+    } else {
+        cart.push({ name, price, qty: 1 });
+    }
+    updateCartUI();
+    showToast(`থলিতে যুক্ত হয়েছে: ${name}`);
+}
+
+function changeQty(idx, delta) {
+    if (!cart[idx]) return;
+    cart[idx].qty += delta;
+    if (cart[idx].qty <= 0) cart.splice(idx, 1);
+    updateCartUI();
+}
+
+function toggleCartDrawer() {
+    document.getElementById('cart-drawer').classList.toggle('active');
+    document.getElementById('cart-drawer-overlay').classList.toggle('active');
+}
+
+function dispatchWhatsAppOrder() {
+    if (cart.length === 0) return alert('আপনার থলি বর্তমানে খালি রয়েছে।');
+    const name = document.getElementById('cust-name').value.trim();
+    const address = document.getElementById('cust-address').value.trim();
     
-        
-        
-    <div id="lead-popup">
-        <div class="close-popup" onclick="document.getElementById('lead-popup').style.display='none'">&times;</div>
-        <h3>Looking for the perfect heat?</h3><p>Get 10% off your first Spice Bundle. Tap below to claim your discount on WhatsApp and elevate your cooking.</p>
-        <a href="https://wa.me/919734239509?text=I want the offer" class="btn btn-accent" target="_blank" rel="noopener noreferrer">Claim My Discount</a>
-    </div>
-    <script defer>
-    setTimeout(() => { 
-        if(!localStorage.getItem('popupShown')) { document.getElementById('lead-popup').style.display = 'block'; localStorage.setItem('popupShown', 'true'); } 
-    }, 6000);
-    </script>
-    
-        
-    </main>
-    <script defer>window.addEventListener('scroll', () => { var r = document.querySelectorAll('.reveal'); for (var i = 0; i < r.length; i++) { if (r[i].getBoundingClientRect().top < window.innerHeight - 100) r[i].classList.add('active'); } }); window.dispatchEvent(new Event('scroll'));</script>
-    <script>if ('serviceWorker' in navigator) { navigator.serviceWorker.register('service-worker.js'); }</script>
+    let msg = `*নতুন অর্ডার - বল্লভ মশলা*%0A`;
+    msg += `-----------------------------------%0A`;
+    let total = 0;
+    cart.forEach(item => {
+        const cost = parseFloat(item.price.replace(/[^0-9.]/g, '')) || 0;
+        total += cost * item.qty;
+        msg += `• ${encodeURIComponent(item.name)} x ${item.qty} (${encodeURIComponent(item.price)})%0A`;
+    });
+    msg += `-----------------------------------%0A`;
+    msg += `*মোট মূল্য:* ₹${total.toFixed(2)}%0A%0A`;
+    if (name) msg += `*গ্রাহকের নাম:* ${encodeURIComponent(name)}%0A`;
+    if (address) msg += `*ডেলিভারি ঠিকানা:* ${encodeURIComponent(address)}%0A`;
+    msg += `*পেমেন্ট নোট:* অনুগ্রহ করে অর্ডার ও প্রেরণের সময় নিশ্চিত করুন।`;
+
+    window.open(`https://wa.me/919734239509?text=${msg}`, '_blank');
+    cart = [];
+    updateCartUI();
+    toggleCartDrawer();
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+    fetchInventory();
+    updateCartUI();
+});
+
+  // Background Scroll-Lock for Mobile Menus
+function lockScroll(enable) {
+    if (enable) {
+        document.body.style.overflow = 'hidden';
+        document.body.style.touchAction = 'none';
+    } else {
+        document.body.style.overflow = '';
+        document.body.style.touchAction = '';
+    }
+}
+
+// Update your toggle functions to include scroll locking:
+const originalToggleNav = toggleMobileNav;
+toggleMobileNav = function() {
+    const nav = document.querySelector('.nav-links');
+    const willOpen = !nav.classList.contains('active');
+    nav.classList.toggle('active');
+    lockScroll(willOpen);
+};
+
+const originalCloseNav = closeNav;
+closeNav = function() {
+    document.querySelector('.nav-links').classList.remove('active');
+    lockScroll(false);
+};
+
+const originalToggleCart = toggleCartDrawer;
+toggleCartDrawer = function() {
+    const drawer = document.getElementById('cart-drawer');
+    const willOpen = !drawer.classList.contains('active');
+    drawer.classList.toggle('active');
+    document.getElementById('cart-drawer-overlay').classList.toggle('active');
+    lockScroll(willOpen);
+};
+</script>
 </body>
 </html>
